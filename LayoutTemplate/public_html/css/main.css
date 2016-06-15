@@ -4,6 +4,7 @@ body{
     margin: 0px;
 }
 
+/*Header Information-------------------------------------*/
 header{
     background-color: #F89A40;
 
@@ -12,4 +13,8 @@ header{
 header a{
     color: white;
     text-decoration: none;
+}
+
+header.7of12{
+    text-align:center;
 }
