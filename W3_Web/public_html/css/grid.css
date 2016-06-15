@@ -1,0 +1,14 @@
+.section-item{
+    width:48.5%;
+    float:left;
+    margin-right:1.5%;
+}
+
+@media (max-width: 1200px){
+    .section-item{
+        width:100%;
+        min-width:650px;
+    }
+}
+
+

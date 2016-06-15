@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Phone Depot Style Guide</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grid.css">
+</head>
+
+<body>
+    <div class="body-container">
+        <h1>Style Guide</h1>
+        <h4>The following is the style guide for the design of the look and feel of the Phone Depot application. Use the navigation
+            to explore the guide. </h4>
+    </div>
+
+    <nav class="top-nav">
+        <div class="top-nav-item">
+            <a href="#interactive">INTERACTIVE</a>
+        </div>
+        <div class="top-nav-item">
+            <a href="#text">TEXT</a>
+        </div>
+        <div class="top-nav-item">
+            <a href="#combined">COMBINED</a>
+        </div>
+    </nav>
+
+    <div class="body-container">
+        <section id="#interactive">
+            <h2>INTERACTIVE ELEMENTS</h2>
+            <h4>In this section, we'll be detailing the interactive elements of the page.</h4>
+            <section class="section-item">
+                <h3>In Text Links</h3>
+                <h4>Rendered Sample</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus arcu, sollicitudin quis diam nec, maximus
+                    suscipit massa. <a href="#" class="intext-link" onclick="return false">Sed id vehicula risus, nec feugiat nisi.</a>                    Nulla facilisi. Phasellus ut suscipit sapien, vel porttitor ligula. Aliquam euismod mi id feugiat viverra.
+                    Pellentesque euismod magna ac commodo faucibus. Nam sem nibh, sagittis id varius in, efficitur eu quam.
+                    Etiam sit amet vulputate nisl. Etiam dictum tortor purus, et vestibulum augue porta sit amet.</p>
+
+                <h4>CSS Selector</h4>
+                <p>"intext-link"</p>
+                <div class="sample-code">
+                    <h4>Sample HTML Code</h4>
+                    <pre><code>
+    &lt;a href="#" class="intext-link"">
+                </code></pre>
+                    <h4>Sample CSS Styling</h4>
+                    <pre><code>
+    .intext-link{
+        text-decoration: none;
+        color: #506AB4;
+        font-weight: 600;
+    }
+
+    .intext-link:hover, .intext-link:visited{
+        font-weight: 400;
+    }
+                </code></pre>
+                </div>
+            </section>
+
+            <section class="section-item">
+                <h3>Navigation Button</h3>
+                <h4>Rendered Sample</h4>
+                <p>&nbsp;</p>
+                <div class="nav-button">
+                    <a href="#" onclick="return false">Back</a>
+                    <a href="#" onclick="return false">Next</a>
+                </div>
+                <p>&nbsp;</p>
+                <h4>CSS Selector:</h4>
+                <p>"nav-button"</p>
+                <div class="sample-code">
+                    <h4>Sample HTML Code</h4>
+                    <pre><code> 
+    &lt;div class="nav-button">
+        &lt;a href="#" onclick="return false">Back&lt;/a>
+        &lt;a href="#" onclick="return false">Next&lt;/a>
+    &lt;/div>                  
+                    </code></pre>
+                    <h4>Sample CSS Styling</h4>
+                    <pre><code>
+    .nav-button a{
+        box-sizing: border-box;
+        background-color: white;
+        border: 0.1em solid #506AB4;
+        padding: 0.5em 1em;
+        color: #506AB4;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.5em;
+        font-weight: 300;
+        margin-top:0.5em;
+    }
+
+    .nav-button a:hover{
+        background-color: rgba(80,106,180, 0.2);
+        -webkit-transition: background-color 0.5s ease;
+        -moz-transition: background-color 0.5s ease;
+        transition: background-color 0.5s ease;
+    }
+                </pre></code>
+                </div>
+            </section>
+
+            <section class="section-item">
+                <h3>Submitting &amp; Resetting</h3>
+                <h4>Rendered Sample</h4>
+
+                <form method="POST" action="#" onclick="return false">
+                    <input type="submit" value="Submit Button" class="button-form">
+                </form>
+                <button type="reset" class="button-button">Reset</button>
+                <p>&nbsp</p>
+                <h4>CSS Selector:</h4>
+                <p>"button-button" &amp; "button-form"</p>
+                <div class="sample-code">
+                    <h4>Sample HTML Code</h4>
+                    <pre><code> 
+    &lt;form method="POST" action="#">
+    &lt;input type="submit" value="Submit Button" class="button-form">
+    &lt;/form>
+    &lt;button type="reset" class="button-button">Reset &lt;/button>                 
+                    </code></pre>
+                    <h4>Sample CSS Styling</h4>
+                    <pre><code>
+    .button-button{
+        background-color: #F89A40;
+        border: none;
+        padding: 0.5em 1em;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.5em;
+        font-weight: 200;
+        margin:0.5em;
+    }
+
+    .button-form{
+        background-color: #F89A40;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        padding: 0.5em 1em;
+        font-size: 1.5em;
+        font-weight: 200;
+        margin:0.5em;
+    }
+
+    .button-form:hover, .button-form:visited, 
+    .button-button:hover, .button-button:visited{
+        background-color: rgba(248, 154, 64, 0.6);
+        -webkit-transition: background-color 0.8s ease;
+        -moz-transition: background-color 0.8s ease;
+        transition: background-color 0.8s ease;
+    }
+                </pre></code>
+                </div>
+            </section>
+
+            <section class="section-item">
+                <h3>Input Fields & Label</h3>
+                <h4>Rendered Sample</h4>
+
+                <form method="POST" action="#" onclick="return false">
+                    <label for="name" class="form-text-label">please enter your name</label>
+                    <br>
+                    <input type="text" id="name" placeholder="enter name" class="form-text-entry">
+                    <button type="reset" class="button-button">Reset</button>
+                </form>
+                <p>&nbsp;</p>
+
+                <form method="POST" action="#" onclick="return false">
+                    <input type="text" placeholder="enter email" class="text-entry">
+                    <input type="submit" value="submit" class="button-form">
+                </form>
+
+                <p>&nbsp;</p>
+                <h4>CSS Selector:</h4>
+                <p>"button-button" &amp; "button-form"</p>
+                <div class="sample-code">
+                    <h4>Sample HTML Code</h4>
+                    <pre><code> 
+    &lt;form method="POST" action="#">
+         &lt;label for="name" class="form-text-label">enter name &lt;/label> 
+         &lt;input type="text" id="name" placeholder="enter name" class="form-text-entry">                    
+    &lt;/form>
+    
+    
+     &lt;form method="POST" action="#">
+         &lt;input type="text" placeholder="enter email" class="text-entry"> 
+        &lt;input type="submit" value="submit" class="button-form">                   
+    &lt;/form>               
+                    </code></pre>
+                    <h4>Sample CSS Styling</h4>
+                    <pre><code>
+    form input{
+        font-size: 1.5em;
+        font-weight: 200;
+        padding: 0.5em 1em;
+        margin: 0;	
+    }
+
+    form label{
+        font-size: 0.8em;
+        font-weight: normal;
+        padding: 0 0 0 0;
+        margin: 0;
+        color: #506AB4;
+        opacity: 1;
+        position: relative;
+        top: 0.8em;    
+    }
+                    </pre></code>
+                </div>
+            </section>
+
+        </section>
+
+
+        <!-----------------------TEXTUAL ELEMENTS SECTION-------------------->
+        <section id="text">
+            <h2>TEXTUAL ELEMENTS</h2>
+            <h4>Elements that involve text and stuffs!</h4>
+
+            <section class="section-item">
+                <h3>Headings</h3>
+                <h4>Rendered Sample</h4>
+                <p>H1 Main Headers</p>
+                <h1>Phone Depot</h1>
+                <p>H2 Secondary Header</p>
+                <h2>PHONE DEPOT TEST TEXT</h2>
+                <p>H3 Sub Header</p>
+                <h3>Phone Depot Test Text</h3>
+                <p>H4 Sub Sub Header</p>
+                <h4>phone depot test text</h4>
+                <p>&nbsp;</p>
+                <h4>CSS Selector:</h4>
+                <p> not required </p>
+                <div class="sample-code">
+                    <h4>Sample HTML Code</h4>
+                    <pre><code> 
+   not required               
+                    </code></pre>
+                    <h4>Sample CSS Styling</h4>
+                    <pre><code>
+	h1{
+	    font-size: 4rem;
+	    font-weight: 100;
+	    letter-spacing: 0.25em;
+	    margin-top: 0.8em;
+	    margin-bottom: 0.1em ;
+	}
+	
+	h2{
+	    margin: 0em;
+	    letter-spacing: 0.25em;
+	}
+	
+	h3{
+	    margin: 0em;
+	}
+	
+	h4{
+	    margin: 0em;
+	    font-weight: 400;
+	}
+
+                    </pre></code>
+                </div>
+            </section>
+
+            <section class="section-item">
+                <h3>Paragraphs</h3>
+                <p>The fonts used in body are defined from the san-serif family, Roboto, Arial,and Helvetica as selected fonts.</p>
+                <h4>Rendered Sample</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel tortor ex. Nam tempus urna ante, sed placerat
+                    sem suscipit vel. Proin vehicula ultrices enim, non vulputate felis pharetra ac. Suspendisse sodales
+                    egestas risus, a pharetra elit. Phasellus lobortis imperdiet arcu, id dictum sapien interdum sed. Proin
+                    bibendum lacus eget dignissim cursus. Curabitur luctus mauris purus, sit amet dictum sem blandit malesuada.
+                    Maecenas in consequat ipsum.</p>
+                <h4>CSS Selector:</h4>
+                <p> not required </p>
+                <div class="sample-code">
+                    <h4>Sample HTML Code</h4>
+                    <pre><code> 
+   body{
+        font-family: Roboto, Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        font-weight: 300;
+        color: black;
+        margin: 0;
+        background-color: 	#F0F0F0;
+        display: inline;
+    }              
+                    </code></pre>
+                    <h4>Sample CSS Styling</h4>
+                    <pre><code>
+	p{
+	    font-weight:400;
+	    font-size:0.8em;
+	    letter-spacing: 0.035em
+	}
+                    </pre></code>
+                </div>
+            </section>
+
+            <section class="section-item">
+                <h3>Bulleted List</h3>
+                <h4>Rendered Sample</h4>
+
+                <ul>
+                    <h4>List Heading</h4>
+                    <li>list item 1</li>
+                    <li>list item 2</li>
+                    <li>list item 2</li>
+                </ul>
+                <h4>CSS Selector:</h4>
+                <p> not required </p>
+                <div class="sample-code">
+                    <h4>Sample HTML Code</h4>
+                    <pre><code> 
+   	&lt;ul>
+		&lt;li>list item 1&lt;/li>
+		&lt;li>list item 2&lt;/li>
+		&lt;li>list item 2&lt;/li>
+	&lt;/ul>          
+                    </code></pre>
+                    <h4>Sample CSS Styling</h4>
+                    <pre><code>
+    ol, ul{
+        position: relative;
+        left: 1em;    
+    }
+
+    ul li{
+        list-style: none;
+    }
+
+    ul li::before{
+        content: "• ";
+        font-weight: 900;
+        color: #F89A40;
+    }
+
+    ol h4, ul h4{
+        position: relative;
+        left: -1.2em;
+    }
+                    </pre></code>
+                </div>
+            </section>
+
+            <section class="section-item">
+                <h3>Numbered List</h3>
+                <h4>Rendered Sample</h4>
+
+                <ol>
+                    <h4>List Heading</h4>
+                    <li>list item 1</li>
+                    <li>list item 2</li>
+                    <li>list item 2</li>
+                </ol>
+                <h4>CSS Selector:</h4>
+                <p> not required </p>
+                <div class="sample-code">
+                    <h4>Sample HTML Code</h4>
+                    <pre><code> 
+    &lt;ol>
+        &lt;li>list item 1&lt;/li>
+        &lt;li>list item 2&lt;/li>
+        &lt;li>list item 2&lt;/li>
+    &lt;/ol>          
+                    </code></pre>
+                    <h4>Sample CSS Styling</h4>
+                    <pre><code>
+ENTER STYLING INFORMATION
+                    </pre></code>
+                </div>
+            </section>
+        </section>
+
+
+        <!-------------------COMBINED ELEMENTS SECTION--------------------------->
+        <section id="combined">
+            <h2>COMBINED ELEMENTS</h2>
+            <h4>Elements combined to bring the site together.</h4>
+
+            <section class="section-item">
+                <h3>Main Navigation</h3>
+                <h4>Rendered Sample</h4>
+                <h4>Rendered Sample</h4>
+                <nav class="nav-sample">
+                    <a href="#" onclick="return false">Navigation 1</a>
+                    <a href="#" onclick="return false">Navigation 2</a>
+                    <a href="#" onclick="return false">Navigation 3</a>
+                </nav>
+                <h4>CSS Selector:</h4>
+                <p> not required </p>
+                <div class="sample-code">
+                    <h4>Sample HTML Code</h4>
+                    <pre><code> 
+SAMPLE CODE     
+                    </code></pre>
+                    <h4>Sample CSS Styling</h4>
+                    <pre><code>
+ENTER STYLING INFORMATION
+                    </pre></code>
+                </div>
+            </section>
+
+            <section class="section-item">
+                <h3>Product Listing</h3>
+                <h4>Rendered Sample</h4>
+                <p>&nbsp;</p>
+
+                <section class="product-item">
+                    <div class="pi-name">
+                        <h3>Product Name</h3>
+                        <p>close button</p>
+                    </div>
+
+                    <figure class="pi-img">
+                        <img src="img/img.jpg" alt="sample image">
+                        <figcaption>This is a sample image of Product Name</figcaption>
+                    </figure>
+
+                    <div class="pi-desc">
+                        <p>This is a basic description of the product. This usually describes what this product does, how this
+                            product works and so of so forth. If you're not sure how this product works then click on more
+                            information.
+                        </p>
+                    </div>
+
+                    <div class="pi-price">
+                        <h4>Sale?</h4>
+                        <h4>$price / unit</h4>
+                    </div>
+
+                    <div class="pi-btns">
+                        <button type="button">Compare</button>
+                        <button type="button">More Info</button>
+                        <button type="button">Add to Cart</button>
+                    </div>
+
+                </section>
+                <h4>CSS Selector:</h4>
+                <p> "product-item" "pi-img" "pi-desc" "pi-price" "pi-buttons" </p>
+                <div class="sample-code">
+                    <h4>Sample HTML Code</h4>
+                    <pre><code> 
+    &lt;section class="product-item">
+        &lt;div class="pi-name">
+            &lt;h3>Product Name&lt;/h3>
+            &lt;p>close button&lt;/p>
+        &lt;/div>
+
+        &lt;figure class="pi-img">
+            &lt;img src="img/img.jpg" alt="sample image">
+            &lt;figcaption>This is a sample image of Product Name&lt;/figcaption>
+        &lt;/figure>
+
+        &lt;div class="pi-desc">
+            &lt;p>This is a basic description of the product. This usually describes what this product does, how this
+                product works and so of so forth. If you're not sure how this product works then click on more
+                information.
+            &lt;/p>
+        &lt;/div>
+
+        &lt;div class="pi-price">
+            &lt;h4>Sale?&lt;/h4>
+            &lt;h4>$price / unit&lt;/h4>
+        &lt;/div>
+
+        &lt;div class="pi-btns">
+            &lt;button type="button">Compare&lt;/button>
+            &lt;button type="button">More Info&lt;/button>
+            &lt;button type="button">Add to Cart&lt;/button>
+        &lt;/div>
+
+    <&lt;/section>       
+                    </code></pre>
+                    <h4>Sample CSS Styling</h4>
+                    <pre><code>
+ENTER STYLING INFORMATION
+                    </pre></code>
+                </div>
+            </section>
+
+            <section class="section-item">
+                <h3>Website Grid Structure</h3>
+                <h4>Rendered Sample</h4>
+                <p>Not entirely sure how to represent this but imagine a 12 column grid</p>
+                <h4>CSS Selector:</h4>
+                <p> "1of12" </p>
+                <div class="sample-code">
+                    <h4>Sample HTML Code</h4>
+                    <pre><code> 
+NOT REQUIRED      
+                    </code></pre>
+                    <h4>Sample CSS Styling</h4>
+                    <pre><code>
+NOT REQUIRED
+                    </pre></code>
+                </div>
+            </section>
+
+        </section>
+    </div>
+
+</body>
+
+</html>
