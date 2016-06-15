@@ -6,8 +6,11 @@ body{
 
 /*Header Information-------------------------------------*/
 header{
+    position: fixed;
     background-color: #F89A40;
-
+    height:3em;
+    width:100%;
+    display:float;
 }
 
 header a{
@@ -15,6 +18,10 @@ header a{
     text-decoration: none;
 }
 
-header.7of12{
+.header7of12 nav{
     text-align:center;
+}
+
+.header7of12 a{
+    margin:5%;
 }
