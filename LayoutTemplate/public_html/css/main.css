@@ -117,6 +117,10 @@ ul li a{
     flex: 1;
 }
 
+.body-6of10{
+    display: flex;
+}
+
 footer{
     position:fixed;
     bottom: 0;
@@ -130,3 +134,4 @@ footer p{
     text-align: center;
     font-weight: 300;
 }
+

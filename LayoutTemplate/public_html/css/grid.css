@@ -31,6 +31,8 @@
     width:60%;
 }
 
+
+
 /*1200p RESOLUTION -------------------------*/
 @media (max-width:80em){
     .nav-hof10{
@@ -39,6 +41,9 @@
     
     .nav-1of10{
         width:13%;
+    }
+    .nav-1hof10{
+        width:20%;
     }
     
     .body-hof10.spacer{
@@ -54,4 +59,9 @@
 /*900p RESOLUTION -------------------------*/
 @media (max-width:65em){ 
     
+}
+
+/*736p RESOLUTION -------------------------*/
+@media (max-width:53em){
+
 }
