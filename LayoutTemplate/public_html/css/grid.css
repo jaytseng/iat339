@@ -11,6 +11,14 @@
     width:10%;
 }
 
+.nav-hof10{
+    width:5%;
+}
+
+.nav-1hof10{
+    width:15%;
+}
+
 .body-1hof10{
     width:15%;
 }
@@ -20,5 +28,30 @@
 }
 
 .body-6of10{
-    width:60%
+    width:60%;
+}
+
+/*1200p RESOLUTION -------------------------*/
+@media (max-width:80em){
+    .nav-hof10{
+        width:0%;
+    }
+    
+    .nav-1of10{
+        width:13%;
+    }
+    
+    .body-hof10.spacer{
+        visibility: hidden;
+        width:0%;
+    }
+    
+    .body-1hof10{
+        width: 20%;
+    }      
+}
+
+/*900p RESOLUTION -------------------------*/
+@media (max-width:65em){ 
+    
 }
