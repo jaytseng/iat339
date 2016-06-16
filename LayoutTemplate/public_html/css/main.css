@@ -1,27 +1,48 @@
+*, *:after, *:before{
+    box-sizing: border-box;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     margin: 0px;
+    background-color: lightgray;   
+    position: relative;
+}
+
+div{
+    display: inline-block;
 }
 
 /*Header Information-------------------------------------*/
 header{
-    position: fixed;
+    position: fixed;   
     background-color: #F89A40;
     height:3em;
     width:100%;
-    display:float;
 }
 
 header a{
+    padding:1em 2em;
     color: white;
     text-decoration: none;
 }
 
 .header7of12 nav{
+    vertical-align: center;
     text-align:center;
 }
 
 .header7of12 a{
-    margin:5%;
+    padding:1em 2em;
+}
+
+/*Content Container------------------------------------*/
+.content{
+    width:100%;
+    padding-top:3em;
+    
+}
+.body8of12{
+    background-color: white;
 }

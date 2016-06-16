@@ -1,3 +1,20 @@
+/*header grid--------------------------*/
 .header1of12{
-    max-width:2em;   
+    max-width:8.77%;   
 }
+
+/*content grid -------------------------*/
+.body1of12.spacer{
+    width:8.77%;   
+    min-height:1px; 
+}
+
+.body1of12 #hl-filter{
+    width:8.77%;
+}
+
+.body8of12{
+    width:67.77%;
+}
+
+/*footer grid --------------------------*/
