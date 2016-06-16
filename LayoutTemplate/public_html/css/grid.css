@@ -31,10 +31,14 @@
     width:60%;
 }
 
+.content-1of3{
+    position: relative;
+    width: 30%;    
+}
 
 
 /*1200p RESOLUTION -------------------------*/
-@media (max-width:80em){
+@media (max-width:100em){
     .nav-hof10{
         width:0%;
     }
@@ -57,11 +61,17 @@
 }
 
 /*900p RESOLUTION -------------------------*/
-@media (max-width:65em){ 
-    
+@media (max-width:75em){   
+    .content-1of3{
+        margin-right:0.5em;
+        width:50%;    
+    }
 }
 
 /*736p RESOLUTION -------------------------*/
-@media (max-width:53em){
-
+@media (max-width:53em){    
+    .content-1of3{
+        margin-right:0.5em;
+        width:100%;    
+    }
 }
