@@ -1,63 +1,177 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+	font-family: 'Roboto', arial, verdana, sans-serif;  
+	font-size: 14px; 
+	color: black; 
+	position: relative;
+	min-width:320px;
     margin: 0px;
-    background-color: lightgray;   
-    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-div{
-    display: inline-block;
+h1{
+	font-weight: 500;
+	font-size: 1.5em;
 }
 
-/*Nav Information-------------------------------------*/
-nav{    
-    text-align:center;
-    position: fixed;   
-    background-color: #F89A40;
+h2{
+	font-size: 1.2em;
+	text-decoration: none;
+	font-weight:500;
+}
+h2 a{
+	color: black;
+}
+h3{
+	font-size: 1.2em;
+	text-decoration: none;
+	padding-left: 1em;
+}
+
+h4{
+	font-size:1.1em;
+}
+
+h5{
+	font-size: 1.3em;
+	text-decoration: none;
+	margin-left: 1em;
+	margin-top:1em;
+
+
+}
+h6{
+	font-size: 1em;
+	text-decoration: none;
+}
+
+/*NAVIGATION ---------------------------------*/
+nav{
+    width:100%;
+    height: 4em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #F89A40;    
+}
+
+nav h1{
+    text-align: left;
+    margin-top:0.75em;
+    color:white;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-1of10 a{
+    position:relative;
+    top:1.5em;
+}
+
+/*SIDE FILTER BAR*/
+ul{
+    padding-left: 0em;
+}
+
+ul li{
+    list-style-type: none;
+    margin: 1em;
+}
+
+ul li a{
+     color: white;
+     text-decoration: none;
+}
+
+#hl-filter h2{
+    padding-left:1em;
+    padding-top:1em;
+    color:white;
+}
+
+
+
+/*CONTENT BOX ------------------------------*/
+.content{
+    position:absolute;
+    top:4em;
+    width:100%;
+    height: 75em;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    /*flex-direction: column;*/
+    align-items: stretch;
+    align-content: stretch;
+    background-color: #f8f8f8;
+}
+
+.body-1hof10 {
+    position:relative;
+    background-color: #555555;
+    overflow: auto;
+    flex: 1;
+}
+
+.body-6of10{
+    display: flex;
+}
+
+footer{
+    position:fixed;
+    bottom: 0;
     height:3em;
     width:100%;
+    background-color: #222222;
 }
-nav a{
-    position: relative;
-    top:1em;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-top: 1em;
-    padding-bottom:1em;
+
+footer p{
     color: white;
-    text-decoration: none;
+    text-align: center;
+    font-weight: 300;
 }
 
-/*Content Container------------------------------------*/
-.content{
-    width:100%;
-    height:100%;
-    padding-top:3em; 
-    box-sizing: border-box;   
-}
-
-.content ul{
-    padding:0px;
-}
-.content ul li{
-    list-style: none;
-}
-
-.content ul a{
-    text-decoration: none;  
-    color: white;
-    padding:1em;
-
-}
-
-.body1of12{
-    background-color:darkgray;
-}
-
-.body8of12{
-
+.content-1of3  {
     background-color: white;
+    border: 1px solid lightgray;
+    box-shadow: 0.2em 0.2em 0.1em lightgray;
+    padding:1em;
+    margin-bottom: 1em;;
+    height:36rem;
+    margin-left:0.5em;
+    margin-top:0.5em;
 }
 
+.button-button{
+    background-color: #506AB4;
+    border: none;
+    padding: 0.5em 1em;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 200;
+    margin-top:0.5em;
+}
 
+.button-form{
+    background-color: #506AB4;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    font-size: 1.5em;
+    font-weight: 200;
+}
+
+.button-form:hover, .button-form:visited , .button-button:hover, .button-button:visited{
+    background-color: rgba(31,42,71, 0.6);
+    -webkit-transition: background-color 0.8s ease;
+    -moz-transition: background-color 0.8s ease;
+    transition: background-color 0.8s ease;
+}
