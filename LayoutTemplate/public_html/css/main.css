@@ -56,7 +56,7 @@ nav{
     background-color: #F89A40;    
 }
 
-nav a{
+.nav-6of10 a{
     text-decoration: none;
     color: white;
     font-weight: 600;
@@ -93,6 +93,7 @@ nav a{
     padding-top:0.15em;
     color:white;
     margin: 0;
+    font-style: italic;
 }
 
 .nav-1of10 a{
