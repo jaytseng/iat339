@@ -192,8 +192,8 @@ ul li a{
 .body-6of10{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    /*align-items: center;
+    justify-content: center;*/
     height: 100%;
 }
 
