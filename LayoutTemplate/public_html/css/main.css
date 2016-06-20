@@ -145,3 +145,33 @@ footer p{
     margin-left:0.5em;
     margin-top:0.5em;
 }
+
+.button-button{
+    background-color: #506AB4;
+    border: none;
+    padding: 0.5em 1em;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 200;
+    margin-top:0.5em;
+}
+
+.button-form{
+    background-color: #506AB4;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    font-size: 1.5em;
+    font-weight: 200;
+}
+
+.button-form:hover, .button-form:visited , .button-button:hover, .button-button:visited{
+    background-color: rgba(31,42,71, 0.6);
+    -webkit-transition: background-color 0.8s ease;
+    -moz-transition: background-color 0.8s ease;
+    transition: background-color 0.8s ease;
+}

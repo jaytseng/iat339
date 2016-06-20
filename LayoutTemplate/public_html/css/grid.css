@@ -33,7 +33,8 @@
 
 .content-1of3{
     position: relative;
-    width: 30%;    
+    width: 33%;   
+    margin-right:0.5em;
 }
 
 
@@ -63,8 +64,11 @@
 /*900p RESOLUTION -------------------------*/
 @media (max-width:75em){   
     .content-1of3{
-        margin-right:0.5em;
-        width:50%;    
+        float: left;
+        display: wrap;
+        flex-direction: row-reverse;
+        width:50%;  
+        margin-right:0.5em;  
     }
 }
 
