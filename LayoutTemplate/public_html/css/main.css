@@ -77,19 +77,27 @@ nav a{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    flex-wrap: nowrap;
     height: 100%;
 }
 
 .subNav-1of3{
     width:100%;
+    opacity: 0.6;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
 }
 
-.subNav-1of3 a{
+a.subNav-1of3{
     flex-grow: 1;
     align-self: flex-start;
     height:100%;
 }
+
+.subNav-1of3:hover, .subNav1of3:active{
+    opacity:1;
+}
+
 
 .subNav-1of3 a img{
     padding: 1.8em;
