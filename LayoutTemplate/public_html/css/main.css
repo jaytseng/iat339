@@ -56,22 +56,57 @@ nav{
     background-color: #F89A40;    
 }
 
-nav h1{
-    text-align: left;
-    margin-top:0.75em;
-    color:white;
-}
-
 nav a{
     text-decoration: none;
     color: white;
+    font-weight: 600;
+    font-size:0.9em;
+    letter-spacing: 0.2em;
+}
+
+.nav-6of10{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.nav-1of10{
+    flex-grow: 1;
+}
+.navLogo{
+    margin-top:1em;
+    margin-bottom:1.25em;
+}
+
+.navLogo img{
+    float: left;
+    max-width:2.5em;
+    height: auto;
+    padding-right: 0.5em;
+}
+
+.navLogo h1{
+    float: left;
+    text-align: left;
+    padding-top:0.15em;
+    color:white;
+    margin: 0;
 }
 
 .nav-1of10 a{
-    position:relative;
-    top:1.5em;
+    opacity: 0.7;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
 }
 
+.nav-1of10 a:hover, .nav-1of10 a:active{
+    opacity:1;
+}
+
+/*SUBNAV -------------------------------*/
 .subNav{
     display: flex;
     flex-direction: row;
@@ -100,22 +135,23 @@ a.subNav-1of3{
 
 
 .subNav-1of3 a img{
-    padding: 1.8em;
-    max-width: 100%;
+    width:2em;
     height: auto;
 }
 
 
 
-/*SIDE FILTER BAR*/
+/*SIDE FILTER BAR---------------------------------*/
 ul{
-    padding-left: 0em;
+    padding-left: 1.3em;
 }
 
+/*
 ul li{
     list-style-type: none;
     margin: 1em;
-}
+} 
+*/
 
 ul li a{
      color: white;
