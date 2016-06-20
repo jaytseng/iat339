@@ -72,6 +72,27 @@ nav a{
     top:1.5em;
 }
 
+.subNav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+
+.subNav-1of3{
+    width:100%;
+}
+
+.subNav-1of3 a{
+    flex-grow: 1;
+    align-self: flex-start;
+    height:100%;
+}
+
+
+
 /*SIDE FILTER BAR*/
 ul{
     padding-left: 0em;
