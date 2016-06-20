@@ -91,6 +91,12 @@ nav a{
     height:100%;
 }
 
+.subNav-1of3 a img{
+    padding: 1.8em;
+    max-width: 100%;
+    height: auto;
+}
+
 
 
 /*SIDE FILTER BAR*/
