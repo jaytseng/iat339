@@ -45,16 +45,16 @@
 
 
 /*1200p RESOLUTION -------------------------*/
-@media (max-width:100em){
+@media (max-width:85em){
     .nav-hof10{
-        width:0%;
+        width:1%;
     }
     
     .nav-1of10{
         width:13%;
     }
     .nav-1hof10{
-        width:20%;
+        width:19%;
     }
     
     .body-hof10.spacer{
@@ -68,7 +68,12 @@
 }
 
 /*900p RESOLUTION -------------------------*/
-@media (max-width:75em){   
+@media (max-width:65em){   
+
+    .navLogo h1{
+        visibility: hidden;
+    }
+
     .content-1of3{
         float: left;
         display: wrap;
