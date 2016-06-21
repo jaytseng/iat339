@@ -65,6 +65,10 @@
     .body-1hof10{
         width: 20%;
     }      
+    .body-6of10{
+        position:relative;
+        top:-10em;
+    }
 }
 
 /*900p RESOLUTION -------------------------*/
@@ -87,9 +91,7 @@
     }
 
     .body-6of10{
-        position:relative;
         width:80%;
-        top:-10em;
     }
 }
 
@@ -102,6 +104,15 @@
 
     .body-6of10{
         width:95%;
-        top:-10em;
+        top:-8em;
+    }
+}
+
+
+
+@media (max-width:30em){    
+    .homeConCont.body-6of10{
+        width:95%;
+        top:4em;
     }
 }
