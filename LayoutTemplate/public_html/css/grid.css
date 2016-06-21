@@ -81,12 +81,27 @@
         width:50%;  
         margin-right:0.5em;  
     }
+    .body-1hof10.spacer{
+        visibility: hidden;
+        width:0%;
+    }
+
+    .body-6of10{
+        position:relative;
+        width:80%;
+        top:-10em;
+    }
 }
 
 /*736p RESOLUTION -------------------------*/
-@media (max-width:53em){    
+@media (max-width:40em){    
     .content-1of3{
         margin-right:0.5em;
         width:100%;    
+    }
+
+    .body-6of10{
+        width:95%;
+        top:-10em;
     }
 }
