@@ -43,6 +43,11 @@
     margin-right:0.5em;
 }
 
+.homeConCont p{
+    margin-left: 15em;
+    margin-right: 15em;
+}
+
 
 /*1200p RESOLUTION -------------------------*/
 @media (max-width:85em){
@@ -69,6 +74,11 @@
         position:relative;
         top:-10em;
     }
+
+    .homeConCont p{
+        margin-left: 5em;
+        margin-right: 5em;
+    }
 }
 
 /*900p RESOLUTION -------------------------*/
@@ -93,6 +103,8 @@
     .body-6of10{
         width:80%;
     }
+
+
 }
 
 /*736p RESOLUTION -------------------------*/
@@ -114,5 +126,10 @@
     .homeConCont.body-6of10{
         width:95%;
         top:4em;
+    }
+
+    .homeConCont p{
+        margin-left: 2em;
+        margin-right: 2em;
     }
 }

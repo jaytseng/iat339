@@ -11,8 +11,14 @@
 }
 
 .homeConCont p{
-    margin-left:2em;
-    margin-right:2em;
+    margin-bottom: 1em;
+}
+
+.homeConCont a{
+    display: block;
+    margin: auto;
+    margin-top: 1.5em;
+    width: 50%;
 }
 
 
@@ -50,6 +56,28 @@
     height:auto;
     margin:0;
     padding:0;
+}
+
+.homeRetailerLogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-bottom: 2em;
+}
+.rL-1of4{
+    width:20%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+.rL-1of4 img{
+    transition:all 0.2s ease-in-out;
+}
+
+.rL-1of4 img:hover{
+    transform: scale(1.5);
 }
 
 
