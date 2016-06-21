@@ -1,3 +1,10 @@
+.homeConCont .body-6of10 h2{
+    font-size:2.5em;
+    font-weight: 100;
+    margin: 0.2em;
+}
+
+
 .homeImgCont{
     max-height: 35em;
     top:3em;
@@ -27,4 +34,5 @@
     margin-left:0.5em;
     margin-top:0.5em;
 }
+
 
