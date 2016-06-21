@@ -255,3 +255,22 @@ footer p{
     -moz-transition: background-color 0.8s ease;
     transition: background-color 0.8s ease;
 }
+
+/*FORMS!!!! ----------------------------------------*/
+.form_text input{
+    font-size: 1.5em;
+	font-weight: 200;
+	padding: 0.25em 0.5em;
+	margin-bottom: 0.5em;
+}
+
+form label{
+    font-size: 1em;
+	font-weight: 600;
+	padding: 0 0 0 0;
+	margin: 0;
+	color: #506AB4;   
+}
+
+
+

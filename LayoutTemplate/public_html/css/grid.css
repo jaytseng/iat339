@@ -43,9 +43,9 @@
     margin-right:0.5em;
 }
 
-.homeConCont p{
-    margin-left: 15em;
-    margin-right: 15em;
+.homeConCont p, .homeConCont h2, .homeConCont h3{
+    margin-left: 15rem;
+    margin-right: 15rem;
 }
 
 
@@ -75,9 +75,9 @@
         top:-10em;
     }
 
-    .homeConCont p{
-        margin-left: 5em;
-        margin-right: 5em;
+    .homeConCont p, .homeConCont h2, .homeConCont h3{
+        margin-left: 5rem;
+        margin-right: 5rem;
     }
 }
 
@@ -128,8 +128,8 @@
         top:4em;
     }
 
-    .homeConCont p{
-        margin-left: 2em;
-        margin-right: 2em;
+    .homeConCont p, .homeConCont h2, .homeConCont h3{
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 }
