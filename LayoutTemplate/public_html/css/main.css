@@ -183,7 +183,7 @@ ul li a{
 
 .body-1hof10 {
     position:relative;
-    background-color: #555555;
+    /*background-color: #555555;*/
     overflow: auto;
     flex: 1;
 }
@@ -205,6 +205,8 @@ footer p{
     color: white;
     text-align: center;
     font-weight: 300;
+    margin-top:0.25em;
+    margin-bottom: 0;
 }
 
 .content-1of3  {
