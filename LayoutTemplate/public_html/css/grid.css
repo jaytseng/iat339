@@ -48,6 +48,10 @@
     margin-right: 15rem;
 }
 
+.homeConCont label, .homeConCont input, .homeConCont textarea{
+    width:50%;
+}
+
 
 /*1200p RESOLUTION -------------------------*/
 @media (max-width:85em){
@@ -104,6 +108,9 @@
         width:80%;
     }
 
+    .homeConCont label, .homeConCont input, .homeConCont textarea{
+        width:80%;
+    }
 
 }
 
@@ -117,6 +124,10 @@
     .body-6of10{
         width:95%;
         top:-8em;
+    }
+
+    .homeConCont label, .homeConCont input, .homeConCont textarea{
+        width:90%;
     }
 }
 
