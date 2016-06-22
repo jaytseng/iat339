@@ -164,11 +164,30 @@ ul li a{
      text-decoration: none;
 }
 
-#hl-filter h2{
+.hl-filter h2{
     padding-left:1em;
     padding-top:1em;
     color:white;
 }
+
+.hl-filter, .cart{
+    background-color: gray;
+}
+
+.hl-filter > select{
+    background-color: darkgray;
+    font-size: 1.2em;
+    font-weight: 200;
+    color: white;
+    padding-top: 0.5em;
+    padding-bottom:0.5em;
+    width:100%;
+}
+
+.hl-filter > select:focus{
+    
+}
+
 
 
 
@@ -270,8 +289,6 @@ form label{
 	color: #506AB4;   
 }
 
-.hl-filter, .cart{
-    background-color: gray;
-}
+
 
 
