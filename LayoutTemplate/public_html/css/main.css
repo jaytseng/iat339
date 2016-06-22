@@ -194,8 +194,6 @@ ul li a{
     flex: 1;
 }
 
-.body-6of10{
-}
 
 /*FOOOOOOOOTERRRRRRR------------------------------------------*/
 
@@ -272,6 +270,8 @@ form label{
 	color: #506AB4;   
 }
 
-
+.hl-filter, .cart{
+    background-color: gray;
+}
 
 
