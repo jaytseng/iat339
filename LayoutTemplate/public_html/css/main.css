@@ -3,13 +3,15 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
+html{
+    background-color:   #f8f8f8;;
+}
 body{
 	font-family: 'Roboto', arial, verdana, sans-serif;  
 	font-size: 14px; 
 	color: black; 
 	position: relative;
-	min-width:320px;
+	min-width:420px;
     margin: 0px;
     width: 100%;
     height: 100%;
@@ -148,16 +150,16 @@ a.subNav-1of3{
 
 
 /*SIDE FILTER BAR---------------------------------*/
-ul{
-    padding-left: 1.3em;
+.hl-filter ul{
+    padding-left: 0.3em;
 }
 
-/*
-ul li{
+
+/*ul li{
     list-style-type: none;
-    margin: 1em;
-} 
-*/
+    margin-left: 0em;
+} */
+
 
 ul li a{
      color: white;
@@ -219,6 +221,7 @@ ul li a{
     position:absolute;
     top:4em;
     width:100%;
+    min-height:1200px;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -303,11 +306,15 @@ footer p{
     font-weight: 200;
 }
 
-.button-form:hover, .button-form:visited , .button-button:hover, .button-button:visited{
+.button-form:hover , .button-button:hover{
     background-color: rgba(31,42,71, 0.6);
     -webkit-transition: background-color 0.8s ease;
     -moz-transition: background-color 0.8s ease;
     transition: background-color 0.8s ease;
+}
+
+.button-button:visited{
+    background-color: rgba(31,42,71, 0.6);
 }
 
 /*FORMS!!!! ----------------------------------------*/
@@ -324,7 +331,7 @@ footer p{
     max-height:10em;
 }
 
-.pi-desc, .pi-img, .pi-name, .pi-model, .pi-btns, .pi-price{
+.pi-desc, .pi-img, .pi-name, .pi-model, .pi-price{
     max-width: 25em;
     margin-left:0.5em;
     margin-right:0.5em;
@@ -334,11 +341,12 @@ footer p{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: flex-start;
-    height: 100%;
+    justify-content: stretch;
+    width:100%;
+    flex-wrap: wrap;
 }
 
-.pi-btns button{
+.pi-btns a{
     margin-right:0.2em;
     flex-grow: 1;
 }
@@ -347,7 +355,53 @@ footer p{
     padding: 0;
 }
 
+/*product listing page=================================*/
+.product-detail{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    flex-wrap: wrap;
+}
 
+.detail-1of3{
+    margin:0.5em;
+    background-color: white;
+    border: 1px solid lightgray;
+    box-shadow: 0.2em 0.2em 0.1em lightgray;
+    padding:1em;
+    flex:1 1 auto;
+}
+
+.detail-2of3{
+    flex:2 1 auto;
+    margin:0.5em;
+    background-color: white;
+    border: 1px solid lightgray;
+    box-shadow: 0.2em 0.2em 0.1em lightgray;
+    padding:1em;
+}
+
+.detail-2of3 img{
+    width:100%;
+    max-width:40em;
+    height:auto;
+}
+
+.detail-btns{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: stretch;
+    width:100%;
+    flex-wrap: wrap;
+}
+
+.detail-btns a{
+    margin-right:0.2em;
+    flex-grow: 1;
+}
 
 
 
