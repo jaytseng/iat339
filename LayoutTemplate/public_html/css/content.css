@@ -21,6 +21,7 @@
     margin: auto;
     margin-top: 1.5em;
     width: 50%;
+    z-index: 10000;
 }
 
 
@@ -69,6 +70,7 @@
     height: 100%;
     margin-bottom: 2em;
 }
+
 .rL-1of4{
     width:20%;
     padding-left: 2.5%;
