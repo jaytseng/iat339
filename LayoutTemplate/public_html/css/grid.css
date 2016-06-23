@@ -37,6 +37,10 @@
     width:60%;
 }
 
+.cart, .hl-filter{
+    width: 15%;
+}
+
 .content-1of3{
     position: relative;
     width: 33%;   
@@ -46,6 +50,10 @@
 .homeConCont p, .homeConCont h2, .homeConCont h3{
     margin-left: 15rem;
     margin-right: 15rem;
+}
+
+.homeConCont label, .homeConCont input, .homeConCont textarea{
+    width:50%;
 }
 
 
@@ -67,12 +75,24 @@
         width:0%;
     }
     
+    .content-1of3{
+        float: left;
+        display: wrap;
+        flex-direction: row-reverse;
+        width:50%;  
+        margin-right:0.5em;  
+    }
+    
     .body-1hof10{
         width: 20%;
-    }      
+    }
+
+    .cart, .hl-filter{
+        width: 20%;
+    }    
+
     .body-6of10{
-        position:relative;
-        top:-10em;
+        width: 60%;
     }
 
     .homeConCont p, .homeConCont h2, .homeConCont h3{
@@ -88,22 +108,30 @@
         visibility: hidden;
     }
 
-    .content-1of3{
-        float: left;
-        display: wrap;
-        flex-direction: row-reverse;
-        width:50%;  
-        margin-right:0.5em;  
-    }
-    .body-1hof10.spacer{
+    .body-1hof10 .spacer{
         visibility: hidden;
         width:0%;
     }
+
+    .cart{
+        visibility: hidden;
+        width: 0%;
+    }
+
+    .hl-filter{
+        width:20%;
+    }
+    .body-1hof10{
+        width: 20%;
+    }  
 
     .body-6of10{
         width:80%;
     }
 
+    .homeConCont label, .homeConCont input, .homeConCont textarea{
+        width:80%;
+    }
 
 }
 
@@ -117,6 +145,10 @@
     .body-6of10{
         width:95%;
         top:-8em;
+    }
+
+    .homeConCont label, .homeConCont input, .homeConCont textarea{
+        width:90%;
     }
 }
 

@@ -21,7 +21,6 @@
     margin: auto;
     margin-top: 1.5em;
     width: 50%;
-    z-index: 10000;
 }
 
 
@@ -89,7 +88,6 @@
     display:block;
     margin-left: auto;
     margin-right:auto;
-    width:80%;
 }
 
 .homeConCont label{
