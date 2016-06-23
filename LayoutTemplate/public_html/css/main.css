@@ -60,7 +60,8 @@ nav{
     top: 0;
     left: 0;
     z-index: 1000;
-    background-color: #F89A40;    
+    /*background-color:#222222;*/
+    background-color: #F89A40;
 }
 
 .nav-6of10 a{
