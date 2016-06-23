@@ -3,15 +3,13 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-html{
-    background-color:   #f8f8f8;;
-}
+
 body{
 	font-family: 'Roboto', arial, verdana, sans-serif;  
 	font-size: 14px; 
 	color: black; 
 	position: relative;
-	min-width:420px;
+	min-width:320px;
     margin: 0px;
     width: 100%;
     height: 100%;
@@ -150,16 +148,16 @@ a.subNav-1of3{
 
 
 /*SIDE FILTER BAR---------------------------------*/
-.hl-filter ul{
-    padding-left: 0.3em;
+ul{
+    padding-left: 1.3em;
 }
 
-
-/*ul li{
+/*
+ul li{
     list-style-type: none;
-    margin-left: 0em;
-} */
-
+    margin: 1em;
+} 
+*/
 
 ul li a{
      color: white;
@@ -221,10 +219,11 @@ ul li a{
     position:absolute;
     top:4em;
     width:100%;
-    min-height:1200px;
+    height: 75em;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    /*flex-direction: column;*/
     align-items: stretch;
     align-content: stretch;
     background-color: #f8f8f8;
@@ -260,8 +259,8 @@ footer p{
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
-    align-items: stretch;
-    align-content: stretch;
+    align-items: flex-start;
+    align-content: flex-start;
 
     overflow: auto;
 }
@@ -276,11 +275,9 @@ footer p{
     margin-top:0.5em;
     min-width:20em;
     min-height: 20em;
-    max-width:28em;
-
 
     justify-content: flex-start;
-    flex: 1 0 auto;
+    flex: 1 1 auto;
 }
 
 .button-button{
@@ -306,15 +303,11 @@ footer p{
     font-weight: 200;
 }
 
-.button-form:hover , .button-button:hover{
+.button-form:hover, .button-form:visited , .button-button:hover, .button-button:visited{
     background-color: rgba(31,42,71, 0.6);
     -webkit-transition: background-color 0.8s ease;
     -moz-transition: background-color 0.8s ease;
     transition: background-color 0.8s ease;
-}
-
-.button-button:visited{
-    background-color: rgba(31,42,71, 0.6);
 }
 
 /*FORMS!!!! ----------------------------------------*/
@@ -325,83 +318,7 @@ footer p{
 	margin-bottom: 0.5em;
 }
 
-/*PRODUCT ITEM LISTING------------------*/
-.pi-img img{
-    max-width:100%;
-    max-height:10em;
-}
 
-.pi-desc, .pi-img, .pi-name, .pi-model, .pi-price{
-    max-width: 25em;
-    margin-left:0.5em;
-    margin-right:0.5em;
-}
-
-.pi-btns{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: stretch;
-    width:100%;
-    flex-wrap: wrap;
-}
-
-.pi-btns a{
-    margin-right:0.2em;
-    flex-grow: 1;
-}
-
-.pi-name h3{
-    padding: 0;
-}
-
-/*product listing page=================================*/
-.product-detail{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    height: 100%;
-    flex-wrap: wrap;
-}
-
-.detail-1of3{
-    margin:0.5em;
-    background-color: white;
-    border: 1px solid lightgray;
-    box-shadow: 0.2em 0.2em 0.1em lightgray;
-    padding:1em;
-    flex:1 1 auto;
-}
-
-.detail-2of3{
-    flex:2 1 auto;
-    margin:0.5em;
-    background-color: white;
-    border: 1px solid lightgray;
-    box-shadow: 0.2em 0.2em 0.1em lightgray;
-    padding:1em;
-}
-
-.detail-2of3 img{
-    width:100%;
-    max-width:40em;
-    height:auto;
-}
-
-.detail-btns{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: stretch;
-    width:100%;
-    flex-wrap: wrap;
-}
-
-.detail-btns a{
-    margin-right:0.2em;
-    flex-grow: 1;
-}
 
 
 
