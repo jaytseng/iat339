@@ -19,7 +19,7 @@
 .homeConCont a{
     display: block;
     margin: auto;
-    margin-top: 1.5em;
+    margin-top: 1em;
     width: 50%;
 }
 
@@ -84,11 +84,12 @@
     transform: scale(1.2);
 }
 
-.homeConCont label, .homeConCont input, .homeConCont textarea{
+.homeConCont label, .homeConCont input[type="text"], .homeConCont input[type="submit"], .homeConCont input[type="email"], .homeConCont textarea{
     display:block;
     margin-left: auto;
     margin-right:auto;
 }
+
 
 .homeConCont label{
     top:1rem;
@@ -107,17 +108,125 @@
     margin-top: 2em;
 }
 
+
 .cartContent {
     background-color: white;
-    align-items: center;
-    
-    
+    align-items: center;    
 }
 
+.cart-summary{
+    padding-bottom:1.5em;
+}
+
+
+.cart-summary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width:100%;
+    flex-wrap: wrap;
+}
+
+.summary-cont{
+    width:50%;
+    flex: 1 1 auto;
+    margin:0.1em;
+    background-color: lightgray;
+}
+
+.summary-cont p, .summary-cont h2{
+    margin:1em;
+}
+
+.cart-product{
+    width:75%;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:1em;
+    background-color:#f8f8f8;
+}
+
+.cart-prod-style{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    width:100%;
+    flex-wrap: wrap;
+}
+
+.cart-product-name{
+    flex-grow: 1;
+}
+
+<<<<<<< HEAD
 .cartContent form{
     margin: 1em;
     margin-top: 2em;
 }
 
+=======
+.cart-product-name p{
+    margin:1em;
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+.cart-delete-icon{
+    position:relative;
+    top:1em;
+    left:1em;
+}
+
+.cart-delete-icon a{
+    margin:0;
+}
+
+.cart-delete-icon img{
+    width:10%;
+    height:auto;
+    margin:0;
+}
+
+.cart-product-image{
+    flex-grow:2;
+    margin-left:0.2em;
+    margin-bottom:0.2em;
+    max-width:15em;
+    background-color: white;
+}
+
+.cart-product-image img{
+    width:100%;
+    height:auto;
+}
+
+.cart-product-unit{
+    flex-grow:1;
+    margin-left:0.2em;
+    margin-bottom:0.2em;
+    background-color: white;
+}
+
+.cart-product-unit p{
+    margin-left: 1em;
+    margin-right: 0;
+}
+
+.cart-product-price{
+    flex-grow:1;
+    margin-left:0.2em;
+    margin-right:0.2em;
+    margin-bottom:0.2em;
+    background-color: white;
+}
+
+.cart-product-price p{
+    margin-left:0.2em;
+    
+    margin-right: 0;
+}
+>>>>>>> origin/oldstate_2
 
 
