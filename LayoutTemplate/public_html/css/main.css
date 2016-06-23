@@ -327,8 +327,10 @@ footer p{
 
 /*PRODUCT ITEM LISTING------------------*/
 .pi-img img{
+    margin-left:auto;
+    margin-right:auto;
     max-width:100%;
-    max-height:10em;
+    height: auto;
 }
 
 .pi-desc, .pi-img, .pi-name, .pi-model, .pi-price{
