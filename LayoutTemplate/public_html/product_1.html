@@ -17,7 +17,9 @@
         </div>
 
         <div class="nav-1hof10 navLogo">
-            <a href="home.html"><img src="img/logo.png" alt="Tools to go logo"><h1>TOOLS TO GO</h1></a>
+            <a href="home.html"><img src="img/logo.png" alt="Tools to go logo">
+                <h1>TOOLS TO GO</h1>
+            </a>
         </div>
         <div class="nav-6of10">
             <div class="nav-1of10">
@@ -33,13 +35,13 @@
 
         <div class="nav-1hof10 subNav">
             <div class="subNav-1of3">
-                <a href="cart.html"><img src="img/cart.png" alt="Cart"></a>
+                <a href="#"><img src="img/cart.png" alt="Cart"></a>
             </div>
             <div class="subNav-1of3">
-                <a href="home.html"><img src="img/account.png" alt="Account"></a>
+                <a href="#"><img src="img/account.png" alt="Account"></a>
             </div>
             <div class="subNav-1of3">
-                <a href="home.html"><img src="img/setting.png" alt="Setting"></a>
+                <a href="#"><img src="img/setting.png" alt="Setting"></a>
             </div>
         </div>
 
@@ -52,81 +54,164 @@
         <div class="body-hof10 spacer">
             &nbsp;
         </div>
-        <div class="body-1hof10" id="hl-filter">
-            <h2>select relevant filters</h2>
-            <ul>
-                <li><a href="#">Filter Item 1</a></li>
-                <li><a href="#">Filter Item 2</a></li>
-                <li><a href="#">Filter Item 3</a></li>
-                <li><a href="#">Filter Item 4</a></li>
-                <li><a href="#">Filter Item 5</a></li>
-                <li><a href="#">Filter Item 6</a></li>
-                <li><a href="#">Filter Item 7</a></li>
-                <li><a href="#">Filter Item 8</a></li>
-                <li><a href="#">Filter Item 9</a></li>
-                <li><a href="#">Filter Item 10</a></li>
-                <li><a href="#">Filter Item 11</a></li>
-            </ul>
+        <div class="hl-filter">
+            <form>
+                <label>Narrow your Search</label>
+            </form>
+
+            <select>
+                <option value="selector ">Select Delivery Time</option>
+                <option value="default ">Deliver ASAP</option>
+                <option value="morning ">Deliver at 5AM</option>
+                <option value="morning2 ">Deliver at 11AM</option>
+                <option value="afternoon ">Deliver at 2PM</option>
+                <option value="afternoon2 ">Deliver at 5PM</option>
+                <option value="evening ">Deliver at 8pm</option>
+            </select>
+
+            <form>
+                <label>Select Store Source</label>
+                <ul class="filter-list ">
+                    <li><input type="checkbox" name="1 " value="1 ">
+                        <p>Home Depot</p>
+                    </li>
+                    <li>
+                        <input type="checkbox" name=2 " value="2 ">
+                        <p>Lowes</p>
+                    </li>
+                    <li><input type="checkbox" name="3 " value="3 ">
+                        <p>Rona</p>
+                    </li>
+                    <li><input type="checkbox"  name="3 " value="3 ">
+                        <p>Canadian Tire</p>
+                    </li>
+                    <li><input type="checkbox" name="5 " value="5 ">
+                        <p>Other Local Stores</p>
+                    </li>
+                </ul>
+            </form>
+
+            <select name="category " aria-placeholder="Select a Department ">
+                <option value="appliances ">Select a Department</option>
+                <option value="appliances ">Appliances</option>
+                <option value="bath ">Bath</option>
+                <option value="materials ">Building Materials</option>
+                <option value="decor ">Decor &amp; Treatment</option>
+                <option value="electrical ">Electrical</option>
+                <option value="floors ">Floors &amp; Rugs</option>
+                <option value="furniture ">Furniture</option>
+                <option value="kitchen ">Kitchen</option>
+                <option value="lighting ">Lighting &amp; Ceiling Fans</option>
+                <option value="outdoors ">Outdoors</option>
+                <option value="paint ">Paint</option>
+                <option value="patio ">Patio Furniture</option>
+                <option value="plumbing ">Plumbing</option>
+                <option value="storage ">Storage</option>
+                <option value="tools ">Tools</option>
+                <option value="windows ">Windows &amp; Doors</option>
+            </select>
+
+            <form>
+                <label>Price Range</label>
+                <ul class="filter-list ">
+                    <li><input type="checkbox" name="0-50 " value="0-50 ">
+                        <p>$0-$49</p>
+                    </li>
+                    <li><input type="checkbox" name="50-100 " value="50-100 ">
+                        <p>$50-$99</p>
+                    </li>
+                    <li><input type="checkbox" name="100-150 " value="100-150 ">
+                        <p>$100-$149</p>
+                    </li>
+                    <li><input type="checkbox" name="150-250 " value="150-250 ">
+                        <p>$100-$249</p>
+                    </li>
+                    <li><input type="checkbox" name="250+ " value="250+ ">
+                        <p>$250+</p>
+                    </li>
+                </ul>
+            </form>
+            <form>
+                <label>Rating</label>
+                <ul class="filter-list ">
+                    <li><input type="checkbox" name="1 " value="1 ">
+                        <p>1 star</p>
+                    </li>
+                    <li>
+                        <input type="checkbox" name=2 " value="2 ">
+                        <p>2 star</p>
+                    </li>
+                    <li><input type="checkbox" name="3 " value="3 ">
+                        <p>3 star</p>
+                    </li>
+                    <li><input type="checkbox" name="3 " value="3 ">
+                        <p>4 star</p>
+                    </li>
+                    <li><input type="checkbox" name="5 " value="5 ">
+                        <p>5 star</p>
+                    </li>
+                </ul>
+            </form>
+
+
+
         </div>
 
-<!-----------------------------------Product Content ------------------------------------>
-        <div class="body-6of10">
+        <!-----------------------------------Product Content ------------------------------------>
+        <div class="body-6of10 product-detail">
+            <div class="detail-2of3">
+                <figure>
+                    <img src="img/HT1000.jpg" alt="HT1000 Image" width="80%" height="80%">
+                </figure>
 
-              <figure>
-                 <img src="img/HT1000.jpg" alt="HT1000 Image" width="80%" height="80%">
-              </figure>
 
+                <div class="product-name">
+                    <h1>Wagner HT1000 Heat Tool</h1>
+                </div>
 
-            <div class="product-name">
-                <h1>Wagner HT1000 Heat Tool</h1>
-                
                 <div class="product-description">
-                    <p>The HT1000 heat gun is a dual temperature heat gun. Use in place of toxic chemicals or solvents to remove paint and stain. Remove old paint and flooring, soften adhesives, thaw pipes, plus dozens of other uses.
+                    <p>The HT1000 heat gun is a dual temperature heat gun. Use in place of toxic chemicals or solvents to remove
+                        paint and stain. Remove old paint and flooring, soften adhesives, thaw pipes, plus dozens of other
+                        uses.
                     </p>
 
                     <ul>
-                    <li>Two temperatures 750 F and 1000 F</li>
-                    <li>1200 W and 4100 BTU</li>
-                    <li>Eliminates the need for hazardous chemicals</li>
+                        <li>Two temperatures 750 F and 1000 F</li>
+                        <li>1200 W and 4100 BTU</li>
+                        <li>Eliminates the need for hazardous chemicals</li>
                     </ul>
 
                     <div class="body-6of10 spacer">
-                    &nbsp;
-                    <p>Model # 0503008 Store SKU # 1000143125
-                    </p>
+                        &nbsp;
+                        <p>Model # 0503008 Store SKU # 1000143125
+                        </p>
                     </div>
 
                     <div class="product-price">
                         <h4>$39.98 / each</h4>
                     </div>
-                    <div class="product-buttons">
-                        <button type="button" class="button-button">Add to Cart</button>
-                    </div>
-                        <p> &nbsp; </p>
-                        <p> &nbsp; </p>
-                    <div class="product-review">
-                        <h1>Customer Reviews</h1>
-                        <p>Reviews (0) </p>
-                        <button type="button" class="button-button">Write a Review</button>
-
-                        <p> &nbsp; </p>
-                        <p> &nbsp; </p>
-                    </div>
+                </div>
+                <div class="detail-btns">
+                    <a href="browse.html" class="button-button">Back to Browse</a>
+                    <a href="#" class="button-button">Add to Cart</a>
                 </div>
             </div>
-           
+
+        <div class="detail-1of3">
+            <div class="product-review">
+                <h2>Customer Reviews</h2>
+                <p>Reviews (0) </p>
+                <button type="button" class="button-button">Write a Review</button>
+            </div>
         </div>
+    </div>
 
+    <div class="cart">
+        &nbsp;
+    </div>
 
-
-
-        <div class="body-1hof10">
-            &nbsp;
-        </div>
-
-        <div class="body-hof10 spacer">
-            &nbsp;
-        </div>
+    <div class="body-hof10 spacer">
+        &nbsp;
     </div>
 
     <footer>
