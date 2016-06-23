@@ -188,6 +188,29 @@ ul li a{
     
 }
 
+.hl-filter form{
+    margin-top: 0.75em;
+    margin-bottom:0.25em;
+}
+
+.hl-filter ul{
+    margin: 0;
+}
+
+.hl-filter form label{
+    padding-left: 0.5em;
+    color: white;
+}
+
+.hl-filter ul li{
+    list-style: none;
+}
+
+.hl-filter ul li p{
+    display: inline;
+    color: white;
+    font-size: 0.8rem;
+}
 
 
 
@@ -232,15 +255,29 @@ footer p{
     margin-bottom: 0;
 }
 
-.content-1of3  {
+.product-con{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+
+    overflow: auto;
+}
+
+.product-1of3  {
     background-color: white;
     border: 1px solid lightgray;
     box-shadow: 0.2em 0.2em 0.1em lightgray;
     padding:1em;
-    margin-bottom: 1em;;
-    height:36rem;
-    margin-left:0.5em;
+    margin-bottom: 0.25em;;
+    margin-left:0.25em;
     margin-top:0.5em;
+    min-width:20em;
+    min-height: 20em;
+
+    justify-content: flex-start;
+    flex: 1 1 auto;
 }
 
 .button-button{
@@ -281,13 +318,7 @@ footer p{
 	margin-bottom: 0.5em;
 }
 
-form label{
-    font-size: 1em;
-	font-weight: 600;
-	padding: 0 0 0 0;
-	margin: 0;
-	color: #506AB4;   
-}
+
 
 
 
