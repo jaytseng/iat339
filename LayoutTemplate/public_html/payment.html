@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/content.css">
 </head>
 
 <body>
@@ -17,7 +18,9 @@
         </div>
 
         <div class="nav-1hof10 navLogo">
-            <a href="home.html"><img src="img/logo.png" alt="Tools to go logo"><h1>TOOLS TO GO</h1></a>
+            <a href="home.html"><img src="img/logo.png" alt="Tools to go logo">
+                <h1>TOOLS TO GO</h1>
+            </a>
         </div>
         <div class="nav-6of10">
             <div class="nav-1of10">
@@ -48,27 +51,29 @@
         </div>
     </nav>
 
-    <div class="content">
+    <div class="homeConCont">
+        <p>&nbsp;</p>
+    </div>
+
+    <section class="homeConCont">
         <div class="body-hof10 spacer">
             &nbsp;
         </div>
-        <div class="body-1hof10 hl-filter">
+        <div class="body-1hof10">
             &nbsp;
         </div>
 
-<!-----------------CART CCONTENT ------------------->
+        <!-----------------CART CCONTENT ------------------->
         <div class="body-6of10">
-            <p>&nbsp;<p>
-            
-            <h1>Shipping Address</h1>
 
+            <h2>Shipping Address</h2>
             <form method="post" action="#">
                 <div class="form_text">
                     <label for="form_first_name">Full Name</label>
                     <input type="text" id="form_full_name" placeholder="Jaden Smith">
                 </div>
                 <div class="form_text">
-                    <label for="form_last_name">Address</label> 
+                    <label for="form_last_name">Address</label>
                     <input type="text" id="form_address" placeholder="1234 Smith Ave.">
                 </div>
                 <div class="form_text">
@@ -77,33 +82,28 @@
                 </div>
                 <div class="form_text">
                     <label for="form_province">Province</label>
-                    <input type="text" id="form_province" placeholder="BC"> 
+                    <input type="text" id="form_province" placeholder="BC">
                 </div>
                 <div class="form_text">
                     <label for="form_postal_code">Postal Code</label>
-                    <input type="text" id="form_postal_code" placeholder="A1A 1A1"> 
+                    <input type="text" id="form_postal_code" placeholder="A1A 1A1">
                 </div>
-                <p>&nbsp;<p>
-
-                <div class="action">
-
-                <h1>Billing Address</h1>
-                <input type="checkbox" name="billing" value="Billing">Same as shipping address
-                </div>
-                <p>&nbsp;<p>
-               
             </form>
-            
-            <h1>Payment Method</h1>
-            <input type="checkbox" name="Creditcard" value="Creditcard">Credit Card
-            <input type="checkbox" name="Creditcard" value="Creditcard">Paypal
+            <div class="action">
+                <h2>Billing Address</h2>
+                <p><input type="checkbox" name="billing" value="Billing">Same as shipping address</p>
+            </div>
+
+
+            <h2>Payment Method</h2>
+            <p><input type="checkbox" name="Creditcard" value="Creditcard">Credit Card<input type="checkbox" name="Creditcard" value="Creditcard">Paypal</p>
             <form method="post" action="#">
                 <div class="form_text">
                     <label for="form_card_number">Card Number</label>
                     <input type="text" id="form_cardnumber">
                 </div>
                 <div class="form_text">
-                    <label for="form_expiration_date">Expiration Date</label> 
+                    <label for="form_expiration_date">Expiration Date</label>
                     <input type="text" id="form_address">
                 </div>
                 <div class="form_text">
@@ -112,13 +112,13 @@
                 </div>
                 <div class="form_text">
                     <label for="form_cardholder_name">Cardholder Name</label>
-                    <input type="text" id="form_cardholder_name"> 
+                    <input type="text" id="form_cardholder_name">
                 </div>
-                
-                <a href="receipt.html" class="button-button">PLACE ORDER</a>
-            </form>
-<!------------------------------------->
 
+                <a href="order_receipt.html" class="button-button">PLACE ORDER</a>
+            </form>
+            <!------------------------------------->
+        </div>
         <div class="body-1hof10">
             &nbsp;
         </div>
@@ -126,11 +126,12 @@
         <div class="body-hof10 spacer">
             &nbsp;
         </div>
-    </div>
 
-    <footer>
-        <p>&copy; Tools To Go 2016</p>
-    </footer>
+        </div>
+
+        <footer>
+            <p>&copy; Tools To Go 2016</p>
+        </footer>
 </body>
 
 </html>

@@ -84,11 +84,12 @@
     transform: scale(1.2);
 }
 
-.homeConCont label, .homeConCont input, .homeConCont textarea{
+.homeConCont label, .homeConCont input[type="text"], .homeConCont textarea{
     display:block;
     margin-left: auto;
     margin-right:auto;
 }
+
 
 .homeConCont label{
     top:1rem;
@@ -107,22 +108,10 @@
     margin-top: 2em;
 }
 
-<<<<<<< HEAD
-form label{
-    font-size: 1em;
-	font-weight: 600;
-	padding: 0 0 0 0;
-	margin: 0;
-	color: #506AB4;   
-}
-=======
+
 .cartContent {
     background-color: white;
-    align-items: center;
-    
-    
+    align-items: center;    
 }
 
-
->>>>>>> 99767803c8a6b0bece1603085a916cd5e50b564b
 
