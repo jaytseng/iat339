@@ -17,7 +17,9 @@
         </div>
 
         <div class="nav-1hof10 navLogo">
-            <a href="home.html"><img src="img/logo.png" alt="Tools to go logo"><h1>TOOLS TO GO</h1></a>
+            <a href="home.html"><img src="img/logo.png" alt="Tools to go logo">
+                <h1>TOOLS TO GO</h1>
+            </a>
         </div>
         <div class="nav-6of10">
             <div class="nav-1of10">
@@ -52,51 +54,142 @@
         <div class="body-hof10 spacer">
             &nbsp;
         </div>
-        <div class="body-1hof10" id="hl-filter">
-            <h2>select relevant filters</h2>
-            <ul>
-                <li><a href="#">Filter Item 1</a></li>
-                <li><a href="#">Filter Item 2</a></li>
-                <li><a href="#">Filter Item 3</a></li>
-                <li><a href="#">Filter Item 4</a></li>
-                <li><a href="#">Filter Item 5</a></li>
-                <li><a href="#">Filter Item 6</a></li>
-                <li><a href="#">Filter Item 7</a></li>
-                <li><a href="#">Filter Item 8</a></li>
-                <li><a href="#">Filter Item 9</a></li>
-                <li><a href="#">Filter Item 10</a></li>
-                <li><a href="#">Filter Item 11</a></li>
-            </ul>
+        <div class="hl-filter">
+            <form>
+                <label>Narrow your Search</label>
+            </form>
+
+            <select>
+                <option value="selector ">Select Delivery Time</option>
+                <option value="default ">Deliver ASAP</option>
+                <option value="morning ">Deliver at 5AM</option>
+                <option value="morning2 ">Deliver at 11AM</option>
+                <option value="afternoon ">Deliver at 2PM</option>
+                <option value="afternoon2 ">Deliver at 5PM</option>
+                <option value="evening ">Deliver at 8pm</option>
+            </select>
+
+            <form>
+                <label>Select Store Source</label>
+                <ul class="filter-list ">
+                    <li><input type="checkbox" name="1 " value="1 ">
+                        <p>Home Depot</p>
+                    </li>
+                    <li>
+                        <input type="checkbox" name=2 " value="2 ">
+                        <p>Lowes</p>
+                    </li>
+                    <li><input type="checkbox " name="3 " value="3 ">
+                        <p>Rona</p>
+                    </li>
+                    <li><input type="checkbox " name="3 " value="3 ">
+                        <p>Canadian Tire</p>
+                    </li>
+                    <li><input type="checkbox " name="5 " value="5 ">
+                        <p>Other Local Stores</p>
+                    </li>
+                </ul>
+            </form>
+
+            <select name="category " aria-placeholder="Select a Department ">
+                <option value="appliances ">Select a Department</option>
+                <option value="appliances ">Appliances</option>
+                <option value="bath ">Bath</option>
+                <option value="materials ">Building Materials</option>
+                <option value="decor ">Decor &amp; Treatment</option>
+                <option value="electrical ">Electrical</option>
+                <option value="floors ">Floors &amp; Rugs</option>
+                <option value="furniture ">Furniture</option>
+                <option value="kitchen ">Kitchen</option>
+                <option value="lighting ">Lighting &amp; Ceiling Fans</option>
+                <option value="outdoors ">Outdoors</option>
+                <option value="paint ">Paint</option>
+                <option value="patio ">Patio Furniture</option>
+                <option value="plumbing ">Plumbing</option>
+                <option value="storage ">Storage</option>
+                <option value="tools ">Tools</option>
+                <option value="windows ">Windows &amp; Doors</option>
+            </select>
+
+            <form>
+                <label>Price Range</label>
+                <ul class="filter-list ">
+                    <li><input type="checkbox " name="0-50 " value="0-50 ">
+                        <p>$0-$49</p>
+                    </li>
+                    <li><input type="checkbox " name="50-100 " value="50-100 ">
+                        <p>$50-$99</p>
+                    </li>
+                    <li><input type="checkbox " name="100-150 " value="100-150 ">
+                        <p>$100-$149</p>
+                    </li>
+                    <li><input type="checkbox " name="150-250 " value="150-250 ">
+                        <p>$100-$249</p>
+                    </li>
+                    <li><input type="checkbox " name="250+ " value="250+ ">
+                        <p>$250+</p>
+                    </li>
+                </ul>
+            </form>
+            <form>
+                <label>Rating</label>
+                <ul class="filter-list ">
+                    <li><input type="checkbox " name="1 " value="1 ">
+                        <p>1 star</p>
+                    </li>
+                    <li>
+                        <input type="checkbox " name=2 " value="2 ">
+                        <p>2 star</p>
+                    </li>
+                    <li><input type="checkbox" name="3 " value="3 ">
+                        <p>3 star</p>
+                    </li>
+                    <li><input type="checkbox" name="3 " value="3 ">
+                        <p>4 star</p>
+                    </li>
+                    <li><input type="checkbox" name="5 " value="5 ">
+                        <p>5 star</p>
+                    </li>
+                </ul>
+            </form>
+
+
+
         </div>
 
-<!-----------------------------------Product Content ------------------------------------>
+        <!-----------------------------------Product Content ------------------------------------>
         <div class="body-6of10">
 
-              <figure>
-                 <img src="img/clamps.jpg" alt="HT1000 Image" width="80%" height="80%">
-              </figure>
+            <figure>
+                <img src="img/clamps.jpg" alt="HT1000 Image" width="80%" height="80%">
+            </figure>
 
 
             <div class="product-name">
                 <h1>DeWalt 4 Pack Trigger Clamps</h1>
-                
+
                 <div class="product-description">
-                    <p>DEWALT is the number one brand for woodworking and the Pro. These DEWALT 4-Pack Medium and Large Trigger Clamp pack is ideal for a variety of jobs including holding, spreading and glue ups. The Large Trigger Clamps have the capability to convert to a spreader with one touch of the quick change button. They also have a 300 lb. clamping force that makes them ideal for larger fastening jobs the Pro may have. The Medium clamps in this 4-pack have a clamping force of 100 lbs. No matter the job, DEWALT is guaranteed tough.
+                    <p>DEWALT is the number one brand for woodworking and the Pro. These DEWALT 4-Pack Medium and Large Trigger
+                        Clamp pack is ideal for a variety of jobs including holding, spreading and glue ups. The Large Trigger
+                        Clamps have the capability to convert to a spreader with one touch of the quick change button. They
+                        also have a 300 lb. clamping force that makes them ideal for larger fastening jobs the Pro may have.
+                        The Medium clamps in this 4-pack have a clamping force of 100 lbs. No matter the job, DEWALT is guaranteed
+                        tough.
                     </p>
 
                     <ul>
-                    <li>One handed operation</li>
-                    <li>Tough reinforced nylon body</li>
-                    <li>Medium trigger clamps with 100 lbs. clamping force and 2-7/16 in. (62 mm) throat depth</li>
-                    <li>Large trigger clamps with 300 lbs. clamping force and 3-1/4 in. (82 mm) throat depth</li>
-                    <li>Removable jaw pads protect work surfaces</li>
+                        <li>One handed operation</li>
+                        <li>Tough reinforced nylon body</li>
+                        <li>Medium trigger clamps with 100 lbs. clamping force and 2-7/16 in. (62 mm) throat depth</li>
+                        <li>Large trigger clamps with 300 lbs. clamping force and 3-1/4 in. (82 mm) throat depth</li>
+                        <li>Removable jaw pads protect work surfaces</li>
                     </ul>
-           
+
 
                     <div class="body-6of10 spacer">
-                    &nbsp;
-                    <p>Model # DWHT83196 | Store SKU # 1000813524
-                    </p>
+                        &nbsp;
+                        <p>Model # DWHT83196 | Store SKU # 1000813524
+                        </p>
                     </div>
 
                     <div class="product-price">
@@ -105,10 +198,10 @@
                     <div class="product-buttons">
                         <button type="button" class="button-button">Add to Cart</button>
                     </div>
-                    
-                        <p> &nbsp; </p>
-                        <p> &nbsp; </p>
-                        <p> &nbsp; </p>
+
+                    <p> &nbsp; </p>
+                    <p> &nbsp; </p>
+                    <p> &nbsp; </p>
                     <div class="product-review">
                         <h1>Customer Reviews</h1>
                         <p>Reviews (0) </p>
@@ -121,12 +214,12 @@
             </div>
         </div>
 
-        
 
 
 
 
-        <div class="body-1hof10">
+
+        <div class="cart">
             &nbsp;
         </div>
 
