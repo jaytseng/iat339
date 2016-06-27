@@ -227,6 +227,7 @@ ul li a{
     display: flex;
     align-items: stretch;
     align-content: stretch;
+    flex-wrap: wrap;
     background-color: #f8f8f8;
 }
 
