@@ -348,6 +348,10 @@ form label{
     margin-right:0.5em;
 }
 
+.pi-price{
+    margin-bottom:4em;
+}
+
 .pi-btns{
     position: absolute;
     bottom:0.5em;

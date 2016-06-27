@@ -133,7 +133,7 @@
         width:70%;
     }
 
-    .homeConCont label, .homeConCont input[type="submit"], .homeConCont input[type="email"], .homeConCont textarea{
+    .homeConCont label, .homeConCont input[type="text"],  .homeConCont input[type="submit"], .homeConCont input[type="email"], .homeConCont textarea{
         width:80%;
     }
 
@@ -151,7 +151,7 @@
         top:-8em;
     }
 
-    .homeConCont label, .homeConCont input[type="submit"], .homeConCont input[type="email"], .homeConCont textarea{
+    .homeConCont label, .homeConCont input[type="text"], .homeConCont input[type="submit"], .homeConCont input[type="email"], .homeConCont textarea{
         width:90%;
     }
 
