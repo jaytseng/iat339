@@ -160,13 +160,6 @@
     flex-grow: 1;
 }
 
-<<<<<<< HEAD
-.cartContent form{
-    margin: 1em;
-    margin-top: 2em;
-}
-
-=======
 .cart-product-name p{
     margin:1em;
     font-size: 1.3em;
@@ -227,6 +220,5 @@
     
     margin-right: 0;
 }
->>>>>>> origin/oldstate_2
 
 

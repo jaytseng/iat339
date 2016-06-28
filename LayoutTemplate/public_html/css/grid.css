@@ -7,6 +7,10 @@
 	text-align: center;
 }
 
+.content{
+    flex-wrap: nowrap;
+}
+
 .nav-1of10{
     width:10%;
 }
@@ -26,15 +30,15 @@
 }
 
 .body-1hof10{
-    width:15%;
+    width:17.5%;
 }
 
 .body-hof10{
-    width:5%;
+    width:2.5%;
 }
 
 .body-6of10{
-    width:60%;
+    width:65%;
 }
 
 .cart, .hl-filter{
@@ -85,14 +89,21 @@
     
     .body-1hof10{
         width: 20%;
+    
     }
 
-    .cart, .hl-filter{
+    .hl-filter{
         width: 20%;
-    }    
+    }   
+
+    
+    .cart{
+        visibility: hidden;
+        width: 0%;
+    } 
 
     .body-6of10{
-        width: 60%;
+        width: 80%;
     }
 
     .homeConCont p, .homeConCont h2, .homeConCont h3{
@@ -108,15 +119,23 @@
         visibility: hidden;
     }
 
+    .nav-1hof10.navLogo{
+        width:10%;
+    }
+
+    .nav-1hof10{
+        width:25%;
+    }
+
+    .nav-6of10{
+        width:64%;
+    }
+
     .body-1hof10 .spacer{
         visibility: hidden;
         width:0%;
     }
 
-    .cart{
-        visibility: hidden;
-        width: 0%;
-    }
 
     .hl-filter{
         width:30%;
@@ -133,7 +152,7 @@
         width:70%;
     }
 
-    .homeConCont label, .homeConCont input[type="submit"], .homeConCont input[type="email"], .homeConCont textarea{
+    .homeConCont label, .homeConCont input[type="text"],  .homeConCont input[type="submit"], .homeConCont input[type="email"], .homeConCont textarea{
         width:80%;
     }
 
@@ -151,16 +170,20 @@
         top:-8em;
     }
 
-    .homeConCont label, .homeConCont input[type="submit"], .homeConCont input[type="email"], .homeConCont textarea{
+    .homeConCont label, .homeConCont input[type="text"], .homeConCont input[type="submit"], .homeConCont input[type="email"], .homeConCont textarea{
         width:90%;
     }
 
     .hl-filter{
-        width:50%;
+        width:100%;
+    }
+    
+    .product-con{
+        width:100%;
     }
 
-    .body-6of10 .product-con{
-        width:50%;
+    .content{
+        flex-wrap: wrap;
     }
 }
 
