@@ -60,7 +60,7 @@ nav{
     top: 0;
     left: 0;
     z-index: 1000;
-    background-color:#222222;
+    background-color:#444444;
     /*background-color: #F89A40;*/
 }
 
@@ -173,7 +173,7 @@ ul li a{
     color:white;
 }
 
-.hl-filter, .cart{
+.hl-filter, .cart, .body-hof10{
     background-color: gray;
 }
 
@@ -185,10 +185,6 @@ ul li a{
     padding-top: 0.5em;
     padding-bottom:0.5em;
     width:100%;
-}
-
-.hl-filter > select:focus{
-    
 }
 
 .hl-filter form{
@@ -239,6 +235,7 @@ ul li a{
 }
 
 
+
 /*FOOOOOOOOTERRRRRRR------------------------------------------*/
 
 footer{
@@ -271,7 +268,7 @@ footer p{
 .product-1of3  {
     background-color: white;
     border: 1px solid lightgray;
-    box-shadow: 0.2em 0.2em 0.1em lightgray;
+    box-shadow: 0.05em 0.05em 0.025em lightgray;
     padding:1em;
     margin-bottom: 0.25em;;
     margin-left:0.25em;

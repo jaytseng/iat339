@@ -53,7 +53,7 @@ $(document).ready(function () {
 	}
 
 	if(width > 560){
-		$(".filterTrigger").show();
+		$(".filterCont").show();
 	}
 
 
