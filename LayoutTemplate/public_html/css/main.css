@@ -177,7 +177,7 @@ ul li a{
     background-color: gray;
 }
 
-.hl-filter > select{
+.hl-filter select{
     background-color: darkgray;
     font-size: 1.2em;
     font-weight: 200;
@@ -227,7 +227,7 @@ ul li a{
     display: flex;
     align-items: stretch;
     align-content: stretch;
-    flex-wrap: wrap;
+
     background-color: #f8f8f8;
 }
 
