@@ -195,7 +195,7 @@
         top:4em;
     }
 
-    .homeConCont p, .homeConCont h2, .homeConCont h3{
+    .homeConCont p, .homeConCont h1.homeConCont h2, .homeConCont h3{
         margin-left: 2rem;
         margin-right: 2rem;
     }
