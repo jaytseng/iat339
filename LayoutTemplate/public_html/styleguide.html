@@ -60,7 +60,7 @@
                 <!--------Intext Links----------->
                 <div>
                     <h2>Intext Links</h2>
-                    <h3>CSS Selector:</h3>
+                    <h3>CSS Selector</h3>
                     <pre><code> 
              
             </code></pre>
@@ -72,25 +72,18 @@
                     <!--------Navigation Buttons----------->
                     <h2>Navigation Button</h2>
                     <h3>CSS Selector:</h3>
-                    <pre><code> 
-             
-            </code></pre>
+                    <p>button-button</p>
                     <h3>Sample HTML Code</h3>
                     <pre><code> 
-            &lt;form method="POST" action="#">
-                &lt;input type="submit" name="submit" value="Submit" class="button-button">
-            &lt;/form>
+                &lt;a href="#" class="button-button">More Info&lt;/a>
             </code></pre>
                     <h3>Rendered Sample</h3>
                     <a href="#" class="button-button">More Info</a>
 
-
                     <!--------Submit Buttons----------->
                     <h2>Submit Button</h2>
                     <h3>CSS Selector:</h3>
-                    <pre><code> 
-             
-            </code></pre>
+                    <p>button-button</p>
                     <h3>Sample HTML Code</h3>
                     <pre><code> 
             &lt;form method="POST" action="#">
@@ -110,7 +103,7 @@
                 <h1>TEXT ELEMENTS</h1>
                 <!--------Input Fields & Label----------->
                 <h2>Input Fields & Label</h2>
-                <h3>CSS Selector:</h3>
+                <h3>CSS Selector</h3>
                 <pre><code> 
             "button-button" &amp; "button-form"
             </code></pre>
@@ -169,18 +162,50 @@
 
             <section id="#combined">
                 <h1>COMBINED ELEMENTS</h1>
-               
-    <!--------Product Listing----------->
-                <h3>Product Listing</h3>
+
+                <!--------Product Listing----------->
+                <h2>Product Listing</h2>
+                <h3>CSS Selector</h3>
+                <p>body-6of10</p>
+                <h3>Sample HTML Code</h3>
+                <pre><code> 
+              &lt;div class="body-6of10 product-con">
+                    &lt;div class="product-1of3 ">
+                        &lt;div class="pi-name ">
+                            &lt;h4>Wagner HT1000 Heat Tool&lt;/h4>
+                        &lt;/div>
+                        &lt;figure class="pi-img">
+                            &lt;img src="img/HT1000.jpg" alt="Wagner HT1000 Heat Tool">
+                        &lt;/figure>
+                        &lt;div class="pi-desc ">
+                            &lt;p>The HT1000 heat gun is a dual temperature heat gun. 
+                                  Use in place of toxic chemicals or solvents
+                                  to remove paint and stain. Remove old paint and flooring, 
+                                  soften adhesives, thaw pipes, plus dozens of other uses.
+                            &lt;/p>
+                        &lt;/div>
+                        &lt;div class="pi-model">
+                            &lt;p>Model # 0503008&lt;/p>
+                        &lt;/div>
+                        &lt;div class="pi-price ">
+                            &lt;h4>$39.98 / each&lt;/h4>
+                        &lt;/div>
+                        &lt;div class="pi-btns ">
+                            &lt;a href="product_1.html" class="button-button">More Info&lt;/a>
+                            &lt;a href="#" class="button-button added">Add to Cart&lt;/a>
+                        &lt;/div>
+                    &lt;/div>
+                &lt;/div>
+                </code></pre>
                 <div class="body-6of10 product-con">
                     <div class="product-1of3 ">
                         <div class="pi-name ">
-                            <h3>Wagner HT1000 Heat Tool</h3>
+                            <h4>Wagner HT1000 Heat Tool</h4>
                         </div>
 
                         <figure class="pi-img">
                             <img src="img/HT1000.jpg" alt="Wagner HT1000 Heat Tool">
-                    
+
                         </figure>
 
                         <div class="pi-desc ">
@@ -205,8 +230,36 @@
                     </div>
                 </div>
 
-                 <!--------Main Navigation----------->
-                <h3>Main Navigation</h3>
+                <!--------Main Navigation----------->
+                <h2>Main Navigation</h2>
+                <h3>CSS Selector</h3>
+                <p>nav</p>
+                <h3>Sample HTML Code</h3>
+                <pre><code> 
+                &lt;div class="nav-6of10">
+                    &lt;div class="nav-1of10">
+                        &lt;a href="browse.html">EXPLORE&lt;/a>
+                    &lt;/div>
+                    &lt;div class="nav-1of10">
+                        &lt;a href="track.html">TRACK&lt;/a>
+                    &lt;/div>
+                    &lt;div class="nav-1of10">
+                        &lt;a href="about.html">ABOUT&lt;/a>
+                    &lt;/div>
+                &lt;/div>
+                </code></pre>
+                <h3>Sample CSS Styling</h3>
+                <pre><code> 
+                nav{
+                    width:100%;
+                    height: 4em;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    z-index: 1000;
+                    background-color:#444444;
+                }
+                </code></pre>
                 <div class="nav-1of10">
                     <a href="#">BROWSE</a>
                 </div>
@@ -216,6 +269,7 @@
                 <div class="nav-1of10">
                     <a href="#">ABOUT</a>
                 </div>
+
 
             </section>
 
