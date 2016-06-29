@@ -45,10 +45,19 @@
     width: 15%;
 }
 
+
+.cart .button-button{
+    width:inherit;
+    position: absolute;
+}
+
 .product-1of3{
     position: relative;
-    width: 33%;   
     margin-right:0.5em;
+    margin: 0.15em;
+    max-width: 32%;   
+    margin-left:0.5%;
+    margin-right:0.5%;
 }
 
 .homeConCont p, .homeConCont h2, .homeConCont h2, .homeConCont h3{
@@ -83,8 +92,9 @@
         float: left;
         display: wrap;
         flex-direction: row-reverse;
-        width:50%;  
-        margin-right:0.5em;  
+        max-width: 49%;   
+        margin-left:0.5%;
+        margin-right:0.5%;
     }
     
     .body-1hof10{
@@ -98,9 +108,18 @@
 
     
     .cart{
-        visibility: hidden;
-        width: 0%;
-    } 
+        border-top: #aaaaaa 2px solid;
+        border-bottom: #aaaaaa 2px solid;
+        position:absolute;
+        left:60%;
+        /*z-index: 10000;*/
+        width:40%;
+        padding-bottom:5em;
+    }
+
+    .cart .button-button{
+        width:100%;
+    }
 
     .body-6of10{
         width: 80%;
@@ -155,14 +174,31 @@
     .homeConCont label, .homeConCont input[type="text"],  .homeConCont input[type="submit"], .homeConCont input[type="email"], .homeConCont textarea{
         width:80%;
     }
+    .cart{
+        /*z-index: 10000;*/
+        left:0;
+        width:100%;
+        padding-bottom:5em;
+    }
+
+    .cart .button-button{
+        width:inherit;
+    }
+
+    .product-1of3{
+        max-width: 99%;   
+        margin-left:0.5%;
+        margin-right:0.5%;
+    }
 
 }
 
 /*736p RESOLUTION -------------------------*/
 @media (max-width:40em){    
     .product-1of3{
-        margin-right:0.5em;
-        width:100%;    
+        min-width:95%;
+        margin-left:0.5%;
+        margin-right:0.5%; 
     }
 
     .body-6of10{
@@ -185,6 +221,8 @@
     .content{
         flex-wrap: wrap;
     }
+
+
 }
 
 

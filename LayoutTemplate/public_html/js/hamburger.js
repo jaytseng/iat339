@@ -35,7 +35,7 @@ $(document).ready(function () {
 	/*
 		If the 'width' variable (width of the window) is less then 352px (22em), then we want to perform some actions
 	*/
-	if (width < 560) {
+	if (width < 705) {
 		variable = "less than 560px";
 		console.log("Report" + variable);
 		// $(".nav-toggle").removeClass("hidden");
@@ -52,7 +52,7 @@ $(document).ready(function () {
 		});
 	}
 
-	if(width > 560){
+	if(width > 705){
 		$(".filterCont").show();
 	}
 
