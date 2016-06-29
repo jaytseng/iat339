@@ -444,7 +444,7 @@ form label{
 }
 
 .browseCartItem h3{
-    margin:0;
+    margin:0.25em;
 }
 
 .browseCartItem p{
@@ -467,8 +467,3 @@ form label{
     margin:0.1em;
     flex:1 1 auto;
 }
-
-
-
-
-
