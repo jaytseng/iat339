@@ -18,8 +18,9 @@ body{
 }
 
 h1{
-	font-weight: 500;
 	font-size: 1.5em;
+	text-decoration: none;
+	font-weight:500;
 }
 
 h2{
@@ -33,7 +34,6 @@ h2 a{
 h3{
 	font-size: 1.2em;
 	text-decoration: none;
-	padding-left: 1em;
 }
 
 h4{
