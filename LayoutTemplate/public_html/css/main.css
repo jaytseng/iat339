@@ -262,6 +262,9 @@ footer p{
     margin-bottom: 0;
 }
 
+footer a{
+    color: white;
+}
 .product-con{
     display: flex;
     flex-direction: row;
