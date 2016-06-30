@@ -23,10 +23,10 @@
         </div>
         <div class="nav-6of10">
             <div class="nav-1of10">
-                <a href="browse.html">EXPLORE</a>
+                <a href="browse.html">BROWSE</a>
             </div>
             <div class="nav-1of10">
-                <a href="track.html">TRACK</a>
+                <a href="home.html">TRACK</a>
             </div>
             <div class="nav-1of10">
                 <a href="about.html">ABOUT</a>
@@ -35,7 +35,7 @@
 
         <div class="nav-1hof10 subNav">
             <div class="subNav-1of3">
-                <a href="cart.html"><img src="img/cart.png" alt="Cart"></a>
+                <a href="cart.html" id="navCartBtn"><img src="img/cart.png" alt="Cart"></a>
             </div>
             <div class="subNav-1of3">
                 <a href="home.html"><img src="img/account.png" alt="Account"></a>
@@ -50,16 +50,17 @@
         </div>
     </nav>
 
-    <div class="content">
-        <div class="body-hof10 spacer">
-            &nbsp;
-        </div>
+<div class="content">
+    <div class="body-hof10 spacer">
+        &nbsp;
+    </div>
         <div class="hl-filter">
             <form>
-                <label>Narrow your Search</label>
+                <a href="#" class="filterTrigger">Filter Your Search</a>
             </form>
 
-            <select>
+            <div class="filterCont">
+                <select>
                 <option value="selector ">Select Delivery Time</option>
                 <option value="default ">Deliver ASAP</option>
                 <option value="morning ">Deliver at 5AM</option>
@@ -69,20 +70,20 @@
                 <option value="evening ">Deliver at 8pm</option>
             </select>
 
-            <form>
-                <label>Select Store Source</label>
-                <ul class="filter-list ">
-                    <li><input type="checkbox" name="1 " value="1 ">
-                        <p>Home Depot</p>
-                    </li>
-                    <li>
-                        <input type="checkbox" name=2 " value="2 ">
+                <form>
+                    <label>Select Store Source</label>
+                    <ul class="filter-list ">
+                        <li><input type="checkbox" name="1 " value="1 ">
+                            <p>Home Depot</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" name=2 " value="2 ">
                         <p>Lowes</p>
                     </li>
                     <li><input type="checkbox" name="3 " value="3 ">
                         <p>Rona</p>
                     </li>
-                    <li><input type="checkbox"  name="3 " value="3 ">
+                    <li><input type="checkbox" name="3 " value="3 ">
                         <p>Canadian Tire</p>
                     </li>
                     <li><input type="checkbox" name="5 " value="5 ">
@@ -131,71 +132,73 @@
                     </li>
                 </ul>
             </form>
+
             <form>
                 <label>Rating</label>
                 <ul class="filter-list ">
-                    <li><input type="checkbox" name="1 " value="1 ">
+                    <li>
+                        <input type="checkbox" name="1 " value="1 ">
                         <p>1 star</p>
                     </li>
                     <li>
                         <input type="checkbox" name=2 " value="2 ">
-                        <p>2 star</p>
-                    </li>
-                    <li><input type="checkbox" name="3 " value="3 ">
-                        <p>3 star</p>
-                    </li>
-                    <li><input type="checkbox" name="3 " value="3 ">
-                        <p>4 star</p>
-                    </li>
-                    <li><input type="checkbox" name="5 " value="5 ">
-                        <p>5 star</p>
-                    </li>
-                </ul>
-            </form>
-
-
-
-        </div>
-
-        <!-----------------------------------Product Content ------------------------------------>
-        <div class="body-6of10 product-detail">
-            <div class="detail-2of3">
-                <figure>
-                    <img src="img/HT1000.jpg" alt="HT1000 Image" width="80%" height="80%">
-                </figure>
-
-
-                <div class="product-name">
-                    <h1>Wagner HT1000 Heat Tool</h1>
-                </div>
-
-                <div class="product-description">
-                    <p>The HT1000 heat gun is a dual temperature heat gun. Use in place of toxic chemicals or solvents to remove
-                        paint and stain. Remove old paint and flooring, soften adhesives, thaw pipes, plus dozens of other
-                        uses.
-                    </p>
-
-                    <ul>
-                        <li>Two temperatures 750 F and 1000 F</li>
-                        <li>1200 W and 4100 BTU</li>
-                        <li>Eliminates the need for hazardous chemicals</li>
+                            <p>2 star</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="3 " value="3 ">
+                            <p>3 star</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="3 " value="3 ">
+                            <p>4 star</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="5 " value="5 ">
+                            <p>5 star</p>
+                        </li>
                     </ul>
+                </form>
 
-                    <div class="body-6of10 spacer">
-                        &nbsp;
-                        <p>Model # 0503008 Store SKU # 1000143125
-                        </p>
-                    </div>
+            </div>
+        </div>
+    <!-----------------------------------Product Content ------------------------------------>
+    <div class="body-6of10 product-detail">
+        <div class="detail-2of3">
+            <figure>
+                <img src="img/HT1000.jpg" alt="HT1000 Image" width="80%" height="80%">
+            </figure>
 
-                    <div class="product-price">
-                        <h4>$39.98 / each</h4>
-                    </div>
+
+            <div class="product-name">
+                <h1>Wagner HT1000 Heat Tool</h1>
+            </div>
+
+            <div class="product-description">
+                <p>The HT1000 heat gun is a dual temperature heat gun. Use in place of toxic chemicals or solvents to remove
+                    paint and stain. Remove old paint and flooring, soften adhesives, thaw pipes, plus dozens of other uses.
+                </p>
+
+                <ul>
+                    <li>Two temperatures 750 F and 1000 F</li>
+                    <li>1200 W and 4100 BTU</li>
+                    <li>Eliminates the need for hazardous chemicals</li>
+                </ul>
+
+                <div class="body-6of10 spacer">
+                    &nbsp;
+                    <p>Model # 0503008 Store SKU # 1000143125
+                    </p>
                 </div>
-                <div class="detail-btns">
-                    <a href="browse.html" class="button-button">Back to Browse</a>
-                    <a href="#" class="button-button">Add to Cart</a>
+
+                <div class="product-price">
+                    <h4>$39.98 / each</h4>
                 </div>
             </div>
+            <div class="detail-btns">
+                <a href="browse.html" class="button-button">Back to Browse</a>
+                <a href="#" class="button-button" id="item1btn">Add to Cart</a>
+            </div>
+        </div>
 
         <div class="detail-1of3">
             <div class="product-review">
@@ -206,18 +209,55 @@
         </div>
     </div>
 
-    <div class="cart">
-        &nbsp;
-    </div>
+          <div class="cart">
+            <h3>Items in Cart</h3>
+            <div class="browseCartItem" id="item-1">
+                <h3>Wagner HT1000 Heat Tool</h3>
+                <p>1 item @ $39.98 per item.</p>
+                <div class="browseCartButtons">
+                    <a href="#" class="button-small">+</a>
+                    <a href="#" class="button-small">-</a>
+                    <a href="#" class="button-small" id="remItem1">Remove</a>
+                </div>
+            </div>
+
+            <div class="browseCartItem" id="item-2">
+                <h3>Husky 24 Inch Tool Bag</h3>
+                <p>1 item @ $29.98 per item.</p>
+                <div class="browseCartButtons">
+                    <a href="#" class="button-small">+</a>
+                    <a href="#" class="button-small">-</a>
+                    <a href="#" class="button-small" id="remItem2">Remove</a>
+                </div>
+            </div>
+
+            <div class="browseCartItem" id="item-3">
+                <h3>DeWalt 4Pack Trigger Clamps</h3>
+                <p>1 item @ $49.98 per item.</p>
+                <div class="browseCartButtons">
+                    <a href="#" class="button-small">+</a>
+                    <a href="#" class="button-small">-</a>
+                    <a href="#" class="button-small" id="remItem3">Remove</a>
+                </div>
+            </div>
+
+            <a href="cart.html" class="button-button">Checkout</a>
+        </div>
 
     <div class="body-hof10 spacer">
         &nbsp;
+    </div>
     </div>
 
     <footer>
         <p>&copy;<strong>Adeline Chow &amp; Jay Tseng</strong> 2016</p>
         <p>designed for iat339 summer 2016 with Andrew H. <a href="styleguide.html">style guide</a> &amp; <a href="http://www.github.com/jaytseng/iat339/">git</a></p>
     </footer>
+
+    <script src="js/html5shiv.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/cart.js"></script>
 </body>
 
 </html>
