@@ -73,12 +73,19 @@ $(document).ready(function () {
 
             setTimeout(function () {
                 $(".cart").slideToggle(100);
-            }, 1000);
+            }, 2000);
 
             // variable = "cart closed";
             // console.log("Info: " + variable);
         } else {
             $("#item-1").slideToggle(100);
+            if (btn1State == false) {
+                $("#item1btn").html("<a>Remove from Cart</a>");
+                btn1State = true;
+            } else {
+                $("#item1btn").html("<a>Add to Cart</a>");
+                btn1State = false;
+            }
         }
 
 
@@ -91,9 +98,9 @@ $(document).ready(function () {
 
 
     $("#item-2").hide();		// Setting nav to hide using jQuery/Zepto's method
-
+    var btn2State = false;
     $("#item2btn").click(function () {
-        var btn2State = false;
+
 
         if (width < 1360) {
             $(".cart").slideToggle(100);
@@ -116,19 +123,28 @@ $(document).ready(function () {
 
             setTimeout(function () {
                 $(".cart").slideToggle(100);
-            }, 1000);
+            }, 2000);
 
             // variable = "cart closed";
             // console.log("Info: " + variable);
         } else {
-            $("#item-1").slideToggle(100);
+            $("#item-2").slideToggle(100);
+            if (btn2State == false) {
+                $("#item2btn").html("<a>Remove from Cart</a>");
+                btn2State = true;
+            } else {
+                $("#item2btn").html("<a>Add to Cart</a>");
+                btn2State = false;
+            }
         }
 
 
     });
 
-    $("#item-3").hide();		// Setting nav to hide using jQuery/Zepto's method
     var btn3State = false;
+
+    $("#item-3").hide();		// Setting nav to hide using jQuery/Zepto's method
+
     $("#item3btn").click(function () {
         if (width < 1360) {
             $(".cart").slideToggle(100);
@@ -150,19 +166,29 @@ $(document).ready(function () {
 
             setTimeout(function () {
                 $(".cart").slideToggle(100);
-            }, 1000);
+            }, 2000);
 
             // variable = "cart closed";
             // console.log("Info: " + variable);
         } else {
-            $("#item-1").slideToggle(100);
+            $("#item-3").slideToggle(100);
+            if (btn3State == false) {
+                $("#item3btn").html("<a>Remove from Cart</a>");
+                btn3State = true;
+            } else {
+                $("#item3btn").html("<a>Add to Cart</a>");
+                btn3State = false;
+            }
         }
     });
 
     $("#remItem1").click(function () {
         // The .slideToggle method slides the 'nav' open/closed over 500ms
         $("#item-1").hide();
-
+        if (btn1State == true) {
+            $("#item1btn").html("<a>Add to Cart</a>");
+            btn1State = false;
+        }
         variable = "Item 1 Closed";
         console.log("Report " + variable);
     });
@@ -170,7 +196,10 @@ $(document).ready(function () {
     $("#remItem2").click(function () {
         // The .slideToggle method slides the 'nav' open/closed over 500ms
         $("#item-2").hide();
-
+        if (btn2State == true) {
+            $("#item2btn").html("<a>Add to Cart</a>");
+            btn2State = false;
+        }
         variable = "Hidden";
         console.log("Report" + variable);
     });
@@ -178,7 +207,10 @@ $(document).ready(function () {
     $("#remItem3").click(function () {
         // The .slideToggle method slides the 'nav' open/closed over 500ms
         $("#item-3").hide();
-
+        if (btn3State == true) {
+            $("#item3btn").html("<a>Add to Cart</a>");
+            btn3State = false;
+        }
         variable = "Hidden";
         console.log("Report" + variable);
     });
