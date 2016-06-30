@@ -167,11 +167,17 @@ ul li a{
      color: white;
      text-decoration: none;
 }
-
+.homeConCont p>a{
+    display:inline;
+   color:black;
+   font-weight:600;
+   text-decoration:none;
+}
 .hl-filter form a{
     text-decoration: none;
     color: white;
     font-size: 1.2em;
+    margin-left:0.2em;
 }
 
 .hl-filter h2{
@@ -299,6 +305,7 @@ footer a{
 }
 
 .button-small{
+    flex: 1 1 auto;
     background-color: #506AB4;
     border: none;
     padding: 0.25em 0.25em;
@@ -345,7 +352,7 @@ form label{
 	font-weight: 600;
 	padding: 0 0 0 0;
 	margin: 0;
-	color: #506AB4;   
+	color: #666666;   
 }
 
 /*PRODUCT ITEM LISTING------------------*/
@@ -434,8 +441,11 @@ form label{
 }
 
 .cart h3{
-    margin:0.25em;
+    text-decoration: none;
     color: white;
+    font-size: 1.2em;
+    margin-left:0.25em;
+    font-weight: 400;
 }
 
 .browseCartItem{
@@ -445,6 +455,7 @@ form label{
     padding-bottom:0.5em;
     margin-top: 0.5em;
 }
+<<<<<<< HEAD
 
 
 .browseCartItem h3{
@@ -466,6 +477,8 @@ form label{
     flex-wrap: nowrap;
 }
 
+=======
+>>>>>>> origin/oldstate_2
 
 .browseCartItem h3{
     margin:0.25em;
@@ -486,7 +499,10 @@ form label{
     flex-wrap: nowrap;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/oldstate_2
 .browseCartButtons a{
     wdith:100%;
     margin:0.1em;
