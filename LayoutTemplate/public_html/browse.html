@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
     <meta charset="utf-8">
     <title>Tools To Go</title>
@@ -35,8 +35,8 @@
         </div>
 
         <div class="nav-1hof10 subNav">
-            <div class="subNav-1of3">
-                <a href="cart.html"><img src="img/cart.png" alt="Cart"></a>
+            <div class="subNav-1of3" >
+                <a href="cart.html" id="navCartBtn"><img src="img/cart.png" alt="Cart"></a>
             </div>
             <div class="subNav-1of3">
                 <a href="home.html"><img src="img/account.png" alt="Account"></a>
@@ -59,7 +59,7 @@
         </div>
         <div class="hl-filter">
             <form>
-                <a href="#" class="filterTrigger"><label>Narrow your Search</label></a>
+                <a href="#" class="filterTrigger">Filter Your Search</a>
             </form>
 
             <div class="filterCont">
@@ -145,24 +145,24 @@
                     </li>
                     <li>
                         <input type="checkbox" name=2 " value="2 ">
-                        <p>2 star</p>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="3 " value="3 ">
-                        <p>3 star</p>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="3 " value="3 ">
-                        <p>4 star</p>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="5 " value="5 ">
-                        <p>5 star</p>
-                    </li>
-                </ul>
-            </form>
+                            <p>2 star</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="3 " value="3 ">
+                            <p>3 star</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="3 " value="3 ">
+                            <p>4 star</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="5 " value="5 ">
+                            <p>5 star</p>
+                        </li>
+                    </ul>
+                </form>
 
-        </div>
+            </div>
         </div>
 
         <!---------PRODUCT 1--------->
@@ -194,7 +194,7 @@
 
                 <div class="pi-btns ">
                     <a href="product_1.html" class="button-button">More Info</a>
-                    <a href="#" class="button-button added">Add to Cart</a>
+                    <a href="#" class="button-button added" id="item1btn">Add to Cart</a>
                 </div>
             </div>
             <!----------------PRODUCT 2----------------->
@@ -225,7 +225,7 @@
 
                 <div class="pi-btns ">
                     <a href="product_2.html" class="button-button">More Info</a>
-                    <a href="#" class="button-button">Add to Cart</a>
+                    <a href="#" class="button-button" id="item2btn">Add to Cart</a>
                 </div>
             </div>
 
@@ -255,7 +255,7 @@
 
                 <div class="pi-btns ">
                     <a href="product_3.html" class="button-button">More Info</a>
-                    <a href="#" class="button-button">Add to Cart</a>
+                    <a href="#" class="button-button" id="item3btn">Add to Cart</a>
                 </div>
             </div>
 
@@ -317,13 +317,43 @@
                 <div class="pi-btns ">
                     <a href="product_2.html" class="button-button">More Info</a>
                     <a href="#" class="button-button">Add to Cart</a>
-
                 </div>
             </div>
         </div>
 
-        <div class="cart ">
+        <div class="cart">
+            <h3>Items in Cart</h3>
+            <div class="browseCartItem" id="item-1">
+                <h3>Wagner HT1000 Heat Tool</h3>
+                <p>1 item @ $39.98 per item.</p>
+                <div class="browseCartButtons">
+                    <a href="#" class="button-small">+</a>
+                    <a href="#" class="button-small">-</a>
+                    <a href="#" class="button-small" id="remItem1">Remove</a>
+                </div>
+            </div>
 
+            <div class="browseCartItem" id="item-2">
+                <h3>Husky 24 Inch Tool Bag</h3>
+                <p>1 item @ $29.98 per item.</p>
+                <div class="browseCartButtons">
+                    <a href="#" class="button-small">+</a>
+                    <a href="#" class="button-small">-</a>
+                    <a href="#" class="button-small" id="remItem2">Remove</a>
+                </div>
+            </div>
+
+            <div class="browseCartItem" id="item-3">
+                <h3>DeWalt 4Pack Trigger Clamps</h3>
+                <p>1 item @ $49.98 per item.</p>
+                <div class="browseCartButtons">
+                    <a href="#" class="button-small">+</a>
+                    <a href="#" class="button-small">-</a>
+                    <a href="#" class="button-small" id="remItem3">Remove</a>
+                </div>
+            </div>
+
+            <a href="cart.html" class="button-button">Checkout</a>
         </div>
 
         <div class="body-hof10 spacer ">
@@ -341,6 +371,7 @@
     <script src="js/html5shiv.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/hamburger.js"></script>
+    <script src="js/cart.js"></script>
 </body>
 
 </html>

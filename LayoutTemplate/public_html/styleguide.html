@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="utf-8">
+    <title>Tools To Go</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/content.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-hof10 blank">
+            &nbsp;
+        </div>
+
+        <div class="nav-1hof10 navLogo">
+            <a href="#"><img src="img/logo.png" alt="Tools to go logo">
+                <h1>STYLE GUIDE</h1>
+            </a>
+        </div>
+        <div class="nav-6of10">
+            <div class="nav-1of10">
+                <a href="#interactive">INTERACTIVE</a>
+            </div>
+            <div class="nav-1of10">
+                <a href="#text">TEXT</a>
+            </div>
+            <div class="nav-1of10">
+                <a href="#combined">COMBINED</a>
+            </div>
+        </div>
+
+        <div class="nav-hof10 blank">
+            &nbsp;
+        </div>
+    </nav>
+
+    <div class="homeConCont">
+        <p>&nbsp;</p>
+    </div>
+    <div class="homeConCont">
+        <p>&nbsp;</p>
+    </div>
+
+
+    <section class="homeConCont">
+        <div class="body-hof10 spacer">
+            &nbsp;
+        </div>
+        <div class="body-1hof10 spacer">
+            &nbsp;
+        </div>
+        <div class="body-6of10">
+            <section id="#interactive">
+                <h1>INTERACTIVE ELEMENTS</h1>
+                <!--------Intext Links----------->
+                <div>
+                    <h2>Intext Links</h2>
+                    <h3>CSS Selector</h3>
+                    <pre><code> 
+             
+            </code></pre>
+                    <h3>Sample HTML Code</h3>
+                    <pre><code> 
+             
+            </code></pre>
+
+                    <!--------Navigation Buttons----------->
+                    <h2>Navigation Button</h2>
+                    <h3>CSS Selector:</h3>
+                    <p>button-button</p>
+                    <h3>Sample HTML Code</h3>
+                    <pre><code> 
+                &lt;a href="#" class="button-button">More Info&lt;/a>
+            </code></pre>
+                    <h3>Rendered Sample</h3>
+                    <a href="#" class="button-button">More Info</a>
+
+                    <!--------Submit Buttons----------->
+                    <h2>Submit Button</h2>
+                    <h3>CSS Selector:</h3>
+                    <p>button-button</p>
+                    <h3>Sample HTML Code</h3>
+                    <pre><code> 
+            &lt;form method="POST" action="#">
+                &lt;input type="submit" name="submit" value="Submit" class="button-button">
+            &lt;/form>
+            </code></pre>
+                    <h3>Rendered Sample</h3>
+                    <form method="POST" action="#">
+                        <input type="submit" name="submit" value="Submit" class="button-button">
+                    </form>
+            </section>
+
+            <!--------TEXT----------->
+            <section id="#text">
+
+                <p> &nbsp; </p>
+                <h1>TEXT ELEMENTS</h1>
+                <!--------Input Fields & Label----------->
+                <h2>Input Fields & Label</h2>
+                <h3>CSS Selector</h3>
+                <pre><code> 
+            "button-button" &amp; "button-form"
+            </code></pre>
+                <h3>Sample HTML Code</h3>
+                <pre><code> 
+            &lt;form method="post" action="#">
+                &lt;div class="form_text">
+                    &lt;label for="form_subject">Subject (required)&lt;/label>
+                    &lt;input type="text" id="form_subject" placeholder="Eyes are real!" required>
+                &lt;/div>
+                &lt;input type="submit" name="submit" value="Submit" class="button-button">
+            &lt;/form>
+                 </code></pre>
+                <h3>Rendered Sample</h3>
+                <form method="post" action="#">
+                    <div class="form_text">
+                        <label for="form_subject">Subject (required)</label>
+                        <input type="text" id="form_subject" placeholder="Eyes are real!" required>
+                    </div>
+                    <div class="form_comment">
+                        <label for="form_comment">Message or Comment</label>
+                        <textarea id="form_comment" placeholder="How can eyes be real if life is not real!?!?"></textarea>
+                    </div>
+                    <input type="submit" name="submit" value="Submit" class="button-button">
+                </form>
+
+                <!--------Headings----------->
+
+                <h2>Headings</h2>
+                <h1>Header 1</h1>
+                <h2>Header 2</h2>
+                <h3>Sub Header</h3>
+
+                <!--------Bulleted List----------->
+                <h2>Bulleted List</h2>
+                <h3>Sample HTML Code</h3>
+                <pre><code> 
+                &lt;div class="product-description">
+                &lt;ul>
+                    &lt;li>Two temperatures 750 F and 1000 F&lt;/li>
+                    &lt;li>1200 W and 4100 BTU&lt;/li>
+                    &lt;li>Eliminates the need for hazardous chemicals&lt;/li>
+                &lt;/ul>
+                &lt;/div>
+             
+                </code></pre>
+                <h3>Rendered Sample</h3>
+                <div class="product-description">
+                    <ul>
+                        <li>Two temperatures 750 F and 1000 F</li>
+                        <li>1200 W and 4100 BTU</li>
+                        <li>Eliminates the need for hazardous chemicals</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="#combined">
+                <h1>COMBINED ELEMENTS</h1>
+
+                <!--------Product Listing----------->
+                <h2>Product Listing</h2>
+                <h3>CSS Selector</h3>
+                <p>body-6of10</p>
+                <h3>Sample HTML Code</h3>
+                <pre><code> 
+              &lt;div class="body-6of10 product-con">
+                    &lt;div class="product-1of3 ">
+                        &lt;div class="pi-name ">
+                            &lt;h4>Wagner HT1000 Heat Tool&lt;/h4>
+                        &lt;/div>
+                        &lt;figure class="pi-img">
+                            &lt;img src="img/HT1000.jpg" alt="Wagner HT1000 Heat Tool">
+                        &lt;/figure>
+                        &lt;div class="pi-desc ">
+                            &lt;p>The HT1000 heat gun is a dual temperature heat gun. 
+                                  Use in place of toxic chemicals or solvents
+                                  to remove paint and stain. Remove old paint and flooring, 
+                                  soften adhesives, thaw pipes, plus dozens of other uses.
+                            &lt;/p>
+                        &lt;/div>
+                        &lt;div class="pi-model">
+                            &lt;p>Model # 0503008&lt;/p>
+                        &lt;/div>
+                        &lt;div class="pi-price ">
+                            &lt;h4>$39.98 / each&lt;/h4>
+                        &lt;/div>
+                        &lt;div class="pi-btns ">
+                            &lt;a href="product_1.html" class="button-button">More Info&lt;/a>
+                            &lt;a href="#" class="button-button added">Add to Cart&lt;/a>
+                        &lt;/div>
+                    &lt;/div>
+                &lt;/div>
+                </code></pre>
+                <div class="body-6of10 product-con">
+                    <div class="product-1of3 ">
+                        <div class="pi-name ">
+                            <h4>Wagner HT1000 Heat Tool</h4>
+                        </div>
+
+                        <figure class="pi-img">
+                            <img src="img/HT1000.jpg" alt="Wagner HT1000 Heat Tool">
+
+                        </figure>
+
+                        <div class="pi-desc ">
+                            <p>The HT1000 heat gun is a dual temperature heat gun. Use in place of toxic chemicals or solvents
+                                to remove paint and stain. Remove old paint and flooring, soften adhesives, thaw pipes, plus
+                                dozens of other uses.
+                            </p>
+                        </div>
+
+                        <div class="pi-model">
+                            <p>Model # 0503008</p>
+                        </div>
+
+                        <div class="pi-price ">
+                            <h4>$39.98 / each</h4>
+                        </div>
+
+                        <div class="pi-btns ">
+                            <a href="product_1.html" class="button-button">More Info</a>
+                            <a href="#" class="button-button added">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--------Main Navigation----------->
+                <h2>Main Navigation</h2>
+                <h3>CSS Selector</h3>
+                <p>nav</p>
+                <h3>Sample HTML Code</h3>
+                <pre><code> 
+                &lt;div class="nav-6of10">
+                    &lt;div class="nav-1of10">
+                        &lt;a href="browse.html">EXPLORE&lt;/a>
+                    &lt;/div>
+                    &lt;div class="nav-1of10">
+                        &lt;a href="track.html">TRACK&lt;/a>
+                    &lt;/div>
+                    &lt;div class="nav-1of10">
+                        &lt;a href="about.html">ABOUT&lt;/a>
+                    &lt;/div>
+                &lt;/div>
+                </code></pre>
+                <h3>Sample CSS Styling</h3>
+                <pre><code> 
+                nav{
+                    width:100%;
+                    height: 4em;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    z-index: 1000;
+                    background-color:#444444;
+                }
+                </code></pre>
+                <div class="nav-1of10">
+                    <a href="#">BROWSE</a>
+                </div>
+                <div class="nav-1of10">
+                    <a href="#">TRACK</a>
+                </div>
+                <div class="nav-1of10">
+                    <a href="#">ABOUT</a>
+                </div>
+
+
+            </section>
+
+            <p> &nbsp; </p>
+            <p> &nbsp; </p>
+            </div>
+
+            <div class="body-1hof10 spacer">
+                &nbsp;
+            </div>
+
+            <div class="body-hof10 spacer">
+                &nbsp;
+            </div>
+
+    </section>
+
+
+
+
+    <footer>
+        <p>&copy; <strong>Adeline Chow &amp; Jay Tseng</strong> 2016</p>
+        <p>designed for iat339 summer 2016 with Andrew H.</p>
+    </footer>
+</body>
+
+</html>
