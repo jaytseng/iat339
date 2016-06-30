@@ -73,7 +73,7 @@ $(document).ready(function () {
 
             setTimeout(function () {
                 $(".cart").slideToggle(100);
-            }, 1000);
+            }, 2000);
 
             // variable = "cart closed";
             // console.log("Info: " + variable);
@@ -123,7 +123,7 @@ $(document).ready(function () {
 
             setTimeout(function () {
                 $(".cart").slideToggle(100);
-            }, 1000);
+            }, 2000);
 
             // variable = "cart closed";
             // console.log("Info: " + variable);
@@ -166,7 +166,7 @@ $(document).ready(function () {
 
             setTimeout(function () {
                 $(".cart").slideToggle(100);
-            }, 1000);
+            }, 2000);
 
             // variable = "cart closed";
             // console.log("Info: " + variable);
