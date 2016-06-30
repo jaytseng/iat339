@@ -2,6 +2,7 @@
 
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <head>
     <meta charset="utf-8">
     <title>Tools To GO</title>
@@ -35,7 +36,7 @@
 
         <div class="nav-1hof10 subNav">
             <div class="subNav-1of3">
-                <a href="cart.html"><img src="img/cart.png" alt="Cart"></a>
+                <a href="cart.html" id="navCartBtn"><img src="img/cart.png" alt="Cart"></a>
             </div>
             <div class="subNav-1of3">
                 <a href="home.html"><img src="img/account.png" alt="Account"></a>
@@ -56,10 +57,11 @@
         </div>
         <div class="hl-filter">
             <form>
-                <label>Narrow your Search</label>
+                <a href="#" class="filterTrigger">Filter Your Search</a>
             </form>
 
-            <select>
+            <div class="filterCont">
+                <select>
                 <option value="selector ">Select Delivery Time</option>
                 <option value="default ">Deliver ASAP</option>
                 <option value="morning ">Deliver at 5AM</option>
@@ -69,20 +71,20 @@
                 <option value="evening ">Deliver at 8pm</option>
             </select>
 
-            <form>
-                <label>Select Store Source</label>
-                <ul class="filter-list ">
-                    <li><input type="checkbox" name="1 " value="1 ">
-                        <p>Home Depot</p>
-                    </li>
-                    <li>
-                        <input type="checkbox" name=2 " value="2 ">
+                <form>
+                    <label>Select Store Source</label>
+                    <ul class="filter-list ">
+                        <li><input type="checkbox" name="1 " value="1 ">
+                            <p>Home Depot</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" name=2 " value="2 ">
                         <p>Lowes</p>
                     </li>
                     <li><input type="checkbox" name="3 " value="3 ">
                         <p>Rona</p>
                     </li>
-                    <li><input type="checkbox"  name="3 " value="3 ">
+                    <li><input type="checkbox" name="3 " value="3 ">
                         <p>Canadian Tire</p>
                     </li>
                     <li><input type="checkbox" name="5 " value="5 ">
@@ -131,29 +133,34 @@
                     </li>
                 </ul>
             </form>
+
             <form>
                 <label>Rating</label>
                 <ul class="filter-list ">
-                    <li><input type="checkbox" name="1 " value="1 ">
+                    <li>
+                        <input type="checkbox" name="1 " value="1 ">
                         <p>1 star</p>
                     </li>
                     <li>
                         <input type="checkbox" name=2 " value="2 ">
-                        <p>2 star</p>
-                    </li>
-                    <li><input type="checkbox" name="3 " value="3 ">
-                        <p>3 star</p>
-                    </li>
-                    <li><input type="checkbox" name="3 " value="3 ">
-                        <p>4 star</p>
-                    </li>
-                    <li><input type="checkbox" name="5 " value="5 ">
-                        <p>5 star</p>
-                    </li>
-                </ul>
-            </form>
+                            <p>2 star</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="3 " value="3 ">
+                            <p>3 star</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="3 " value="3 ">
+                            <p>4 star</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="5 " value="5 ">
+                            <p>5 star</p>
+                        </li>
+                    </ul>
+                </form>
 
-
+            </div>
 
         </div>
 
@@ -170,7 +177,8 @@
                 </div>
 
                 <div class="product-description">
-                    <p>At home or on the job site, Husky tool bags are the toughest, most reliable soft sided tool bags available. Carry your tools with confidence.
+                    <p>At home or on the job site, Husky tool bags are the toughest, most reliable soft sided tool bags available.
+                        Carry your tools with confidence.
                     </p>
 
                     <ul>
@@ -192,30 +200,68 @@
                 </div>
                 <div class="detail-btns">
                     <a href="browse.html" class="button-button">Back to Browse</a>
-                    <a href="#" class="button-button">Add to Cart</a>
+                    <a href="#" class="button-button" id="item2btn">Add to Cart</a>
                 </div>
             </div>
 
-        <div class="detail-1of3">
-            <div class="product-review">
-                <h2>Customer Reviews</h2>
-                <p>Reviews (2) </p>
-                <button type="button" class="button-button">Write a Review</button>
+            <div class="detail-1of3">
+                <div class="product-review">
+                    <h2>Customer Reviews</h2>
+                    <p>Reviews (2) </p>
+                    <button type="button" class="button-button">Write a Review</button>
+                </div>
             </div>
+        </div>
+
+        <div class="cart">
+            <h3>Items in Cart</h3>
+            <div class="browseCartItem" id="item-1">
+                <h3>Wagner HT1000 Heat Tool</h3>
+                <p>1 item @ $39.98 per item.</p>
+                <div class="browseCartButtons">
+                    <a href="#" class="button-small">+</a>
+                    <a href="#" class="button-small">-</a>
+                    <a href="#" class="button-small" id="remItem1">Remove</a>
+                </div>
+            </div>
+
+            <div class="browseCartItem" id="item-2">
+                <h3>Husky 24 Inch Tool Bag</h3>
+                <p>1 item @ $29.98 per item.</p>
+                <div class="browseCartButtons">
+                    <a href="#" class="button-small">+</a>
+                    <a href="#" class="button-small">-</a>
+                    <a href="#" class="button-small" id="remItem2">Remove</a>
+                </div>
+            </div>
+
+            <div class="browseCartItem" id="item-3">
+                <h3>DeWalt 4Pack Trigger Clamps</h3>
+                <p>1 item @ $49.98 per item.</p>
+                <div class="browseCartButtons">
+                    <a href="#" class="button-small">+</a>
+                    <a href="#" class="button-small">-</a>
+                    <a href="#" class="button-small" id="remItem3">Remove</a>
+                </div>
+            </div>
+
+            <a href="cart.html" class="button-button">Checkout</a>
+        </div>
+        <div class="body-hof10 spacer">
+            &nbsp;
         </div>
     </div>
 
-    <div class="cart">
-        &nbsp;
-    </div>
-
-    <div class="body-hof10 spacer">
-        &nbsp;
-    </div>
-
     <footer>
-        <p>&copy; Tools To Go 2016</p>
+        <p>&copy;<strong>Adeline Chow &amp; Jay Tseng</strong> 2016<a href="home.html">Tools To Go</a></p>
+        <p>designed for iat339 summer 2016 with Andrew H. <a href="styleguide.html">style guide</a> <a href="citation.html">citation</a>            &amp; <a href="http://www.github.com/jaytseng/iat339/">git</a></p>
     </footer>
+
+
+    <script src="js/html5shiv.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/cart.js"></script>
 </body>
 
 </html>
