@@ -50,7 +50,7 @@ $(document).ready(function () {
 		Here we are using jQuery/Zepto to check the width of the page, with which we then cast into the 'width' variable
 	*/
     $("#item-1").hide();		// Setting nav to hide using jQuery/Zepto's method
-
+    var btn1State = false;
     $("#item1btn").click(function () {
 
         if (width < 1360) {
@@ -62,6 +62,13 @@ $(document).ready(function () {
                 $("#item-1").slideToggle(100);
                 // variable = "item1btn active";
                 // console.log("Info: " + variable);
+                if (btn1State == false) {
+                    $("#item1btn").html("<a>Remove from Cart</a>");
+                    btn1State = true;
+                } else {
+                    $("#item1btn").html("<a>Add to Cart</a>");
+                    btn1State = false;
+                }
             }, 200);
 
             setTimeout(function () {
@@ -86,7 +93,7 @@ $(document).ready(function () {
     $("#item-2").hide();		// Setting nav to hide using jQuery/Zepto's method
 
     $("#item2btn").click(function () {
-        var btn1State = false;
+        var btn2State = false;
 
         if (width < 1360) {
             $(".cart").slideToggle(100);
@@ -97,9 +104,12 @@ $(document).ready(function () {
                 $("#item-2").slideToggle(100);
                 // variable = "item1btn active";
                 // console.log("Info: " + variable);
-                if (btn1State == false) {
-                    $(".item1btn").html("Remove from Cart");
-                    btn1State = true;
+                if (btn2State == false) {
+                    $("#item2btn").html("<a>Remove from Cart</a>");
+                    btn2State = true;
+                } else {
+                    $("#item2btn").html("<a>Add to Cart</a>");
+                    btn2State = false;
                 }
 
             }, 200);
@@ -118,7 +128,7 @@ $(document).ready(function () {
     });
 
     $("#item-3").hide();		// Setting nav to hide using jQuery/Zepto's method
-
+    var btn3State = false;
     $("#item3btn").click(function () {
         if (width < 1360) {
             $(".cart").slideToggle(100);
@@ -129,6 +139,13 @@ $(document).ready(function () {
                 $("#item-3").slideToggle(100);
                 // variable = "item1btn active";
                 // console.log("Info: " + variable);
+                if (btn3State == false) {
+                    $("#item3btn").html("<a>Remove from Cart</a>");
+                    btn3State = true;
+                } else {
+                    $("#item3btn").html("<a>Add to Cart</a>");
+                    btn3State = false;
+                }
             }, 200);
 
             setTimeout(function () {

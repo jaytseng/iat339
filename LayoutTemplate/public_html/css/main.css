@@ -167,7 +167,12 @@ ul li a{
      color: white;
      text-decoration: none;
 }
-
+.homeConCont p>a{
+    display:inline;
+   color:black;
+   font-weight:600;
+   text-decoration:none;
+}
 .hl-filter form a{
     text-decoration: none;
     color: white;
