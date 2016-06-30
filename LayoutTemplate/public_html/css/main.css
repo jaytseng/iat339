@@ -480,3 +480,38 @@ form label{
     margin:0.1em;
     flex:1 1 auto;
 }
+
+.review-output-content{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width:100%;
+}
+
+.review-output-content p{
+    flex:1 1 auto;
+    max-width:75%;
+    padding-right:1em;
+}
+
+.review-output-name, .review-output-time, .review-output-location, .review-output-rating{
+    flex: 1 1 auto;
+}
+
+.review-input{
+    border-top: gray 1px solid;
+    padding-top:1em;
+}
+
+.review-input label{
+    display:block;
+}
+
+.review-input textarea{
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
+    width:100%;
+}
+
