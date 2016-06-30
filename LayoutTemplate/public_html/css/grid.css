@@ -90,7 +90,6 @@
     
     .product-1of3{
         float: left;
-        display: wrap;
         flex-direction: row-reverse;
         max-width: 49%;   
         margin-left:0.5%;

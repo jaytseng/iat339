@@ -430,7 +430,6 @@ form label{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: stretch;
     width:100%;
     flex-wrap: wrap;
 }
@@ -455,30 +454,6 @@ form label{
     padding-bottom:0.5em;
     margin-top: 0.5em;
 }
-<<<<<<< HEAD
-
-
-.browseCartItem h3{
-    margin:0.25em;
-}
-
-.browseCartItem p{
-    padding-left:1.2em;
-    margin-top:0.1em;
-    margin-bottm:0.1em;
-}
-
-.browseCartButtons{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    height: 100%;
-    flex-wrap: nowrap;
-}
-
-=======
->>>>>>> origin/oldstate_2
 
 .browseCartItem h3{
     margin:0.25em;
@@ -499,10 +474,6 @@ form label{
     flex-wrap: nowrap;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/oldstate_2
 .browseCartButtons a{
     width:100%;
     margin:0.1em;
