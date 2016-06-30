@@ -172,6 +172,7 @@ ul li a{
     text-decoration: none;
     color: white;
     font-size: 1.2em;
+    margin-left:0.2em;
 }
 
 .hl-filter h2{
@@ -299,6 +300,7 @@ footer a{
 }
 
 .button-small{
+    flex: 1 1 auto;
     background-color: #506AB4;
     border: none;
     padding: 0.25em 0.25em;
@@ -345,7 +347,7 @@ form label{
 	font-weight: 600;
 	padding: 0 0 0 0;
 	margin: 0;
-	color: #506AB4;   
+	color: #666666;   
 }
 
 /*PRODUCT ITEM LISTING------------------*/
@@ -434,8 +436,11 @@ form label{
 }
 
 .cart h3{
-    margin:0.25em;
+    text-decoration: none;
     color: white;
+    font-size: 1.2em;
+    margin-left:0.25em;
+    font-weight: 400;
 }
 
 .browseCartItem{
@@ -445,7 +450,6 @@ form label{
     padding-bottom:0.5em;
     margin-top: 0.5em;
 }
-<<<<<<< HEAD
 
 .browseCartItem h3{
     margin:0.25em;
@@ -466,28 +470,6 @@ form label{
     flex-wrap: nowrap;
 }
 
-=======
-
-.browseCartItem h3{
-    margin:0.25em;
-}
-
-.browseCartItem p{
-    padding-left:1.2em;
-    margin-top:0.1em;
-    margin-bottm:0.1em;
-}
-
-.browseCartButtons{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    height: 100%;
-    flex-wrap: nowrap;
-}
-
->>>>>>> d1f32b7b5bc5f62c16851929c7e7fa9376d70809
 .browseCartButtons a{
     wdith:100%;
     margin:0.1em;

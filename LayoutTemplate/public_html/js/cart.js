@@ -38,9 +38,9 @@ $(document).ready(function () {
         });
     }
 
-     $("#navCartBtn").click(function (e) {
-            e.preventDefault();
-     });
+    $("#navCartBtn").click(function (e) {
+        e.preventDefault();
+    });
 
 
 
@@ -52,11 +52,31 @@ $(document).ready(function () {
     $("#item-1").hide();		// Setting nav to hide using jQuery/Zepto's method
 
     $("#item1btn").click(function () {
-        // The .slideToggle method slides the 'nav' open/closed over 500ms
-        $("#item-1").slideToggle(100);
 
-        variable = "Triggered";
-        console.log("Report" + variable);
+        if (width < 1360) {
+            $(".cart").slideToggle(100);
+            // variable = "cart open";
+            // console.log("Info: " + variable);
+
+            setTimeout(function () {
+                $("#item-1").slideToggle(100);
+                // variable = "item1btn active";
+                // console.log("Info: " + variable);
+            }, 200);
+
+            setTimeout(function () {
+                $(".cart").slideToggle(100);
+            }, 1000);
+
+            // variable = "cart closed";
+            // console.log("Info: " + variable);
+        } else {
+            $("#item-1").slideToggle(100);
+        }
+
+
+        // variable = "Item 1 Triggered";
+        // console.log("Report" + variable);
     });
 
 
@@ -66,10 +86,33 @@ $(document).ready(function () {
     $("#item-2").hide();		// Setting nav to hide using jQuery/Zepto's method
 
     $("#item2btn").click(function () {
-        // The .slideToggle method slides the 'nav' open/closed over 500ms
-        $("#item-2").slideToggle(100);
+        var btn1State = false;
 
-        variable = "Triggered";
+        if (width < 1360) {
+            $(".cart").slideToggle(100);
+            // variable = "cart open";
+            // console.log("Info: " + variable);
+
+            setTimeout(function () {
+                $("#item-2").slideToggle(100);
+                // variable = "item1btn active";
+                // console.log("Info: " + variable);
+                if (btn1State == false) {
+                    $(".item1btn").html("Remove from Cart");
+                    btn1State = true;
+                }
+
+            }, 200);
+
+            setTimeout(function () {
+                $(".cart").slideToggle(100);
+            }, 1000);
+
+            // variable = "cart closed";
+            // console.log("Info: " + variable);
+        } else {
+            $("#item-1").slideToggle(100);
+        }
 
 
     });
@@ -77,19 +120,34 @@ $(document).ready(function () {
     $("#item-3").hide();		// Setting nav to hide using jQuery/Zepto's method
 
     $("#item3btn").click(function () {
-        // The .slideToggle method slides the 'nav' open/closed over 500ms
-        $("#item-3").slideToggle(100);
+        if (width < 1360) {
+            $(".cart").slideToggle(100);
+            // variable = "cart open";
+            // console.log("Info: " + variable);
 
-        variable = "Triggered";
-        console.log("Report" + variable);
+            setTimeout(function () {
+                $("#item-3").slideToggle(100);
+                // variable = "item1btn active";
+                // console.log("Info: " + variable);
+            }, 200);
+
+            setTimeout(function () {
+                $(".cart").slideToggle(100);
+            }, 1000);
+
+            // variable = "cart closed";
+            // console.log("Info: " + variable);
+        } else {
+            $("#item-1").slideToggle(100);
+        }
     });
 
     $("#remItem1").click(function () {
         // The .slideToggle method slides the 'nav' open/closed over 500ms
         $("#item-1").hide();
 
-        variable = "Hidden";
-        console.log("Report" + variable);
+        variable = "Item 1 Closed";
+        console.log("Report " + variable);
     });
 
     $("#remItem2").click(function () {
