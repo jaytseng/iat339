@@ -63,7 +63,7 @@
             <section id="interactive">
                 <h1>INTERACTIVE ELEMENTS</h1>
                 <!--------Intext Links----------->
-                <div>
+                <div class="detail-1of3">
                     <h2>Intext Links</h2>
                     <h3>CSS Selector</h3>
                     <pre><code> 
@@ -73,8 +73,10 @@
                     <pre><code> 
              
             </code></pre>
+                </div>
 
-                    <!--------Navigation Buttons----------->
+                <!--------Navigation Buttons----------->
+                <div class="detail-1of3">
                     <h2>Navigation Button</h2>
                     <h3>CSS Selector:</h3>
                     <p>button-button</p>
@@ -99,21 +101,17 @@
                     <form method="POST" action="#">
                         <input type="submit" name="submit" value="Submit" class="button-button">
                     </form>
-            </section>
+                </div>
 
-            <!--------TEXT----------->
-            <section id="text">
-
-                <p> &nbsp; </p>
-                <h1>TEXT ELEMENTS</h1>
                 <!--------Input Fields & Label----------->
-                <h2>Input Fields & Label</h2>
-                <h3>CSS Selector</h3>
-                <pre><code> 
+                <div class="detail-1of3">
+                    <h2>Input Fields & Label</h2>
+                    <h3>CSS Selector</h3>
+                    <pre><code> 
             "button-button" &amp; "button-form"
             </code></pre>
-                <h3>Sample HTML Code</h3>
-                <pre><code> 
+                    <h3>Sample HTML Code</h3>
+                    <pre><code> 
             &lt;form method="post" action="#">
                 &lt;div class="form_text">
                     &lt;label for="form_subject">Subject (required)&lt;/label>
@@ -122,30 +120,73 @@
                 &lt;input type="submit" name="submit" value="Submit" class="button-button">
             &lt;/form>
                  </code></pre>
-                <h3>Rendered Sample</h3>
-                <form method="post" action="#">
-                    <div class="form_text">
-                        <label for="form_subject">Subject (required)</label>
-                        <input type="text" id="form_subject" placeholder="Eyes are real!" required>
-                    </div>
-                    <div class="form_comment">
-                        <label for="form_comment">Message or Comment</label>
-                        <textarea id="form_comment" placeholder="How can eyes be real if life is not real!?!?"></textarea>
-                    </div>
-                    <input type="submit" name="submit" value="Submit" class="button-button">
-                </form>
+                    <h3>Rendered Sample</h3>
+                    <form method="post" action="#">
+                        <div class="form_text">
+                            <label for="form_subject">Subject (required)</label>
+                            <input type="text" id="form_subject" placeholder="Eyes are real!" required>
+                        </div>
+                        <div class="form_comment">
+                            <label for="form_comment">Message or Comment</label>
+                            <textarea id="form_comment" placeholder="How can eyes be real if life is not real!?!?"></textarea>
+                        </div>
+                        <input type="submit" name="submit" value="Submit" class="button-button">
+                    </form>
+                </div>
+                <!--------DROPDOWN MENU----------->
+                <div class="detail-1of3">
+                    <h2>Dropdown Menu</h2>
+                    <h3>CSS Selector</h3>
+                    <p>hl-filter</p>
+                    <h3>Sample HTML Code</h3>
+                    <pre><code>
+                    &lt;div class="hl-filter">
+                        &lt;form>
+                            &lt;select>
+                                &lt;option value="selector ">Select Delivery Time</option>
+                                &lt;option value="default ">Deliver ASAP</option>
+                                &lt;option value="morning ">Deliver at 5AM</option>
+                                &lt;option value="morning2 ">Deliver at 11AM</option>
+                                &lt;option value="afternoon ">Deliver at 2PM</option>
+                                &lt;option value="afternoon2 ">Deliver at 5PM</option>
+                                &lt;option value="evening ">Deliver at 8pm</option>
+                            &lt;/select>
+                        &lt;/form>
+                    &lt;/div>
+                    </code></pre>
+                    <h3>Rendered Sample</h3>
 
+                    <div class="hl-filter">
+                        <form>
+                            <select>
+                                <option value="selector ">Select Delivery Time</option>
+                                <option value="default ">Deliver ASAP</option>
+                                <option value="morning ">Deliver at 5AM</option>
+                                <option value="morning2 ">Deliver at 11AM</option>
+                                <option value="afternoon ">Deliver at 2PM</option>
+                                <option value="afternoon2 ">Deliver at 5PM</option>
+                                <option value="evening ">Deliver at 8pm</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!--------TEXT----------->
+            <section id="text">
+                <h1>TEXT ELEMENTS</h1>
                 <!--------Headings----------->
-
-                <h2>Headings</h2>
-                <h1>Header 1</h1>
-                <h2>Header 2</h2>
-                <h3>Sub Header</h3>
-
+                <div class="detail-1of3">
+                    <h2>Headings</h2>
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                </div>
                 <!--------Bulleted List----------->
-                <h2>Bulleted List</h2>
-                <h3>Sample HTML Code</h3>
-                <pre><code> 
+                <div class="detail-1of3">
+                    <h2>Bulleted List</h2>
+                    <h3>Sample HTML Code</h3>
+                    <pre><code> 
                 &lt;div class="product-description">
                 &lt;ul>
                     &lt;li>Two temperatures 750 F and 1000 F&lt;/li>
@@ -155,13 +196,14 @@
                 &lt;/div>
              
                 </code></pre>
-                <h3>Rendered Sample</h3>
-                <div class="product-description">
-                    <ul>
-                        <li>Two temperatures 750 F and 1000 F</li>
-                        <li>1200 W and 4100 BTU</li>
-                        <li>Eliminates the need for hazardous chemicals</li>
-                    </ul>
+                    <h3>Rendered Sample</h3>
+                    <div class="product-description">
+                        <ul>
+                            <li>Two temperatures 750 F and 1000 F</li>
+                            <li>1200 W and 4100 BTU</li>
+                            <li>Eliminates the need for hazardous chemicals</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
@@ -169,11 +211,12 @@
                 <h1>COMBINED ELEMENTS</h1>
 
                 <!--------Product Listing----------->
-                <h2>Product Listing</h2>
-                <h3>CSS Selector</h3>
-                <p>body-6of10</p>
-                <h3>Sample HTML Code</h3>
-                <pre><code> 
+                <div class="detail-1of3">
+                    <h2>Product Listing</h2>
+                    <h3>CSS Selector</h3>
+                    <p>body-6of10</p>
+                    <h3>Sample HTML Code</h3>
+                    <pre><code> 
               &lt;div class="body-6of10 product-con">
                     &lt;div class="product-1of3 ">
                         &lt;div class="pi-name ">
@@ -202,45 +245,47 @@
                     &lt;/div>
                 &lt;/div>
                 </code></pre>
-                <div class="body-6of10 product-con">
-                    <div class="product-1of3 ">
-                        <div class="pi-name ">
-                            <h4>Wagner HT1000 Heat Tool</h4>
-                        </div>
+                    <div class="body-6of10 product-con">
+                        <div class="product-1of3 ">
+                            <div class="pi-name ">
+                                <h4>Wagner HT1000 Heat Tool</h4>
+                            </div>
 
-                        <figure class="pi-img">
-                            <img src="img/HT1000.jpg" alt="Wagner HT1000 Heat Tool">
+                            <figure class="pi-img">
+                                <img src="img/HT1000.jpg" alt="Wagner HT1000 Heat Tool">
 
-                        </figure>
+                            </figure>
 
-                        <div class="pi-desc ">
-                            <p>The HT1000 heat gun is a dual temperature heat gun. Use in place of toxic chemicals or solvents
-                                to remove paint and stain. Remove old paint and flooring, soften adhesives, thaw pipes, plus
-                                dozens of other uses.
-                            </p>
-                        </div>
+                            <div class="pi-desc ">
+                                <p>The HT1000 heat gun is a dual temperature heat gun. Use in place of toxic chemicals or solvents
+                                    to remove paint and stain. Remove old paint and flooring, soften adhesives, thaw pipes,
+                                    plus dozens of other uses.
+                                </p>
+                            </div>
 
-                        <div class="pi-model">
-                            <p>Model # 0503008</p>
-                        </div>
+                            <div class="pi-model">
+                                <p>Model # 0503008</p>
+                            </div>
 
-                        <div class="pi-price ">
-                            <h4>$39.98 / each</h4>
-                        </div>
+                            <div class="pi-price ">
+                                <h4>$39.98 / each</h4>
+                            </div>
 
-                        <div class="pi-btns ">
-                            <a href="product_1.html" class="button-button">More Info</a>
-                            <a href="#" class="button-button added">Add to Cart</a>
+                            <div class="pi-btns ">
+                                <a href="product_1.html" class="button-button">More Info</a>
+                                <a href="#" class="button-button added">Add to Cart</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!--------Main Navigation----------->
-                <h2>Main Navigation</h2>
-                <h3>CSS Selector</h3>
-                <p>nav</p>
-                <h3>Sample HTML Code</h3>
-                <pre><code> 
+                <div class="detail-1of3">
+                    <h2>Main Navigation</h2>
+                    <h3>CSS Selector</h3>
+                    <p>nav</p>
+                    <h3>Sample HTML Code</h3>
+                    <pre><code> 
                 &lt;div class="nav-6of10">
                     &lt;div class="nav-1of10">
                         &lt;a href="browse.html">EXPLORE&lt;/a>
@@ -253,8 +298,8 @@
                     &lt;/div>
                 &lt;/div>
                 </code></pre>
-                <h3>Sample CSS Styling</h3>
-                <pre><code> 
+                    <h3>Sample CSS Styling</h3>
+                    <pre><code> 
                 nav{
                     width:100%;
                     height: 4em;
@@ -265,45 +310,51 @@
                     background-color:#444444;
                 }
                 </code></pre>
-                <div class="nav-1of10">
-                    <a href="#">BROWSE</a>
-                </div>
-                <div class="nav-1of10">
-                    <a href="#">TRACK</a>
-                </div>
-                <div class="nav-1of10">
-                    <a href="#">ABOUT</a>
-                </div>
+                    <div class="nav-1of10">
+                        <a href="#">BROWSE</a>
+                    </div>
+                    <div class="nav-1of10">
+                        <a href="#">TRACK</a>
+                    </div>
+                    <div class="nav-1of10">
+                        <a href="#">ABOUT</a>
+                    </div>
 
-                <p> &nbsp; </p>
+                    <p> &nbsp; </p>
+                </div>
             </section>
 
 
             <!--------OTHERS---------->
+
             <section id="others">
                 <h1>OTHER ELEMENTS</h1>
-                <h2>Color Palette</h2>
-                <img src="img/color_palette.png" alt="Color Palette">
-                <h2>Grid System</h2>
-                <p>10 Column Grid</p>
-                <img src="img/grid.png" alt="10 column">
-
+                <div class="detail-1of3">
+                    <h2>Color Palette</h2>
+                    <img src="img/color_palette.png" alt="Color Palette">
+                </div>
+                <div class="detail-1of3">
+                    <h2>Grid System</h2>
+                    <p>10 Column Grid</p>
+                    <img src="img/grid.png" alt="10 column">
+                </div>
             </section>
 
 
             <p> &nbsp; </p>
             <p> &nbsp; </p>
-            </div>
+        </div>
 
-            <div class="body-1hof10 spacer">
-                &nbsp;
-            </div>
+        <div class="body-1hof10 spacer">
+            &nbsp;
+        </div>
 
-            <div class="body-hof10 spacer">
-                &nbsp;
-            </div>
+        <div class="body-hof10 spacer">
+            &nbsp;
+        </div>
 
     </section>
+
 
 
 

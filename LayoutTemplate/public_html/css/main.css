@@ -445,7 +445,7 @@ form label{
     padding-bottom:0.5em;
     margin-top: 0.5em;
 }
-<<<<<<< HEAD
+
 
 .browseCartItem h3{
     margin:0.25em;
@@ -466,7 +466,6 @@ form label{
     flex-wrap: nowrap;
 }
 
-=======
 
 .browseCartItem h3{
     margin:0.25em;
@@ -487,7 +486,7 @@ form label{
     flex-wrap: nowrap;
 }
 
->>>>>>> d1f32b7b5bc5f62c16851929c7e7fa9376d70809
+
 .browseCartButtons a{
     wdith:100%;
     margin:0.1em;
